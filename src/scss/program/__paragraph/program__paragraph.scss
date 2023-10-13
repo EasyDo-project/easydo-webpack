@@ -1,0 +1,6 @@
+.program__paragraph {
+	margin: 0;
+	padding: 0;
+	align-self: start;
+	@include font(16px, 500, normal, $text-description);
+}

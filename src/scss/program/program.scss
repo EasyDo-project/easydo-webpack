@@ -1,0 +1,13 @@
+.program {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 620px 1fr;
+	grid-template-rows: 87px 1fr;
+	row-gap: 112px;
+	background: url('../../images/program_bgr.png') no-repeat 20px -702px;
+	box-sizing: border-box;
+	overflow: hidden;
+	outline: 1px solid firebrick;
+}

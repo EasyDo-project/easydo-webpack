@@ -1,1 +1,15 @@
 @use '../vendor/normalize.css';
+@use './fonts';
+@import './variables';
+
+@import '../scss/page/page';
+
+@import '../scss/program/program';
+@import '../scss/program/__header/program__header';
+@import '../scss/program/__content/program__content';
+@import '../scss/program/__list/program__list';
+@import '../scss/program/__list-el/program__list-el';
+@import '../scss/program/__highlight/program__highlight';
+@import '../scss/program/__counter/program__counter';
+@import '../scss/program/__paragraph/program__paragraph';
+@import '../scss/program/__image/program__image';

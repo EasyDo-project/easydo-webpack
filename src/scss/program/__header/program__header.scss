@@ -1,0 +1,9 @@
+.program__header {
+	margin: 0 auto;
+	margin-bottom: 112px;
+	padding: 0;
+	width: fit-content;
+	grid-column: 1 / 3;
+	grid-row: 1 / 2;
+	@include font(64px, 700, normal, $text-main);
+}
