@@ -1,11 +1,16 @@
 .program__image {
 	padding: 0;
 	margin: 0;
-	margin-right: -192px;
-	margin-top: -9px;
-	width: 789px;
-	height: 488px;
+	margin-top: -8px;
+	max-width: 789px;
+	max-height: 488px;
+	width: 100%;
+	height: 100%;
 	grid-column: 2 / 3;
 	grid-row: 2 / 3;
-	justify-self: end;
+	object-fit: cover;
+	object-position: left;
+	position: relative;
+	top: auto;
+	right: -58px;
 }

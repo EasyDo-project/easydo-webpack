@@ -1,11 +1,13 @@
 .program {
 	margin: 0;
+	margin-bottom: 110px;
 	padding: 0;
 	width: 100%;
 	display: grid;
-	grid-template-columns: 620px 1fr;
-	grid-template-rows: 87px 1fr;
+	grid-template-columns: minmax(660px, auto) minmax(594px, auto);
+	grid-template-rows: 87px minmax(789px, auto);
 	row-gap: 112px;
+	column-gap: 24.5px;
 	background: url('../../images/program_bgr.png') no-repeat 20px -702px;
 	box-sizing: border-box;
 	overflow: hidden;
