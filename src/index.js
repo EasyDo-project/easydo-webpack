@@ -1,3 +1,6 @@
 import './scss/index.scss';
 
-console.log('Hello World!');
+import { footerDocuments, footerAbout } from './utils/constants.js';
+
+document.querySelector('.footer__info').innerHTML = footerAbout;
+document.querySelector('.footer__documents').innerHTML = footerDocuments;
