@@ -1,22 +1,13 @@
 import { program } from '../utils/const';
+import { Importer } from './Importer';
 
-export class Program {
-	#templateElement;
-	#container;
-
+export class Program extends Importer {
 	constructor(templateSelector, containerSelector) {
-		this.#templateElement = document.querySelector(templateSelector);
-		this.#container = document.querySelector(containerSelector);
+		super(templateSelector, containerSelector);
 	}
 
-	#getTemplate() {
-		return this.#templateElement.content
-			.querySelector('.program__list-el')
-			.cloneNode(true);
-	}
-
-	#generateProgramFeature(featureId, featureContent) {
-		const template = this.#getTemplate();
+	generateProgramFeature(featureId, featureContent) {
+		const template = this.getTemplate();
 		const counterElement = template.querySelector('.program__counter');
 		const contentElement = template.querySelector('.program__paragraph');
 
@@ -28,8 +19,8 @@ export class Program {
 
 	generateList() {
 		program.forEach((el, index) => {
-			const element = this.#generateProgramFeature(index + 1, el);
-			this.#container.append(element);
+			const element = this.generateProgramFeature(index + 1, el);
+			this.container.append(element);
 		});
 	}
 }
