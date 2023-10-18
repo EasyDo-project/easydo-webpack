@@ -12,8 +12,4 @@ export class Importer {
 			.querySelector('.program__list-el')
 			.cloneNode(true);
 	}
-
-	generateProgramFeature() {
-		return this.getTemplate();
-	}
 }
