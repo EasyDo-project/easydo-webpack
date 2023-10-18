@@ -131,6 +131,64 @@
 				/>
 			</div>
 		</section>
+
+		<section class="consultation-form">
+			<h2 class="consultation-form__header">
+				Получите бесплатную консультацию и тренировку в подарок
+			</h2>
+			<div class="consultation-form__leader">
+				<p class="consultation-form__leader-name">ЕКАТЕРИНА ЯРУТКИНА</p>
+				<p class="consultation-form__leader-description">
+					Ведущая программы и группы «Великолепная осанка 50+». Более 12 лет
+					опыта и более 600 клиентов. Куратор программ восстановления после
+					травм и операций в EASY DOO.
+				</p>
+			</div>
+			<form
+				action="#"
+				class="consultation-form__form"
+				id="consultationForm"
+				novalidate
+			>
+				<input
+					type="text"
+					class="consultation-form__input"
+					placeholder="Имя"
+					id="personName"
+					name="personName"
+					required
+					minlength="2"
+					maxlength="50"
+				/>
+				<span class="consultation-form__error personName-error"></span>
+				<input
+					type="number"
+					class="consultation-form__input"
+					placeholder="Ваш телефон"
+					id="personPhone"
+					name="personPhone"
+					required
+				/>
+				<span class="consultation-form__error personPhone-error"></span>
+				<button
+					type="submit"
+					class="consultation-form__btn consultation-form__btn_disabled"
+					disabled
+				>
+					записаться
+				</button>
+				<p class="consultation-form__conf-policy">
+					Нажимая “Отправить заявку” вы соглашаетесь с политикой
+					конфиденциальности
+				</p>
+			</form>
+			<img
+				src="<%=require('../images/form_gift.png')%>"
+				alt=""
+				class="consultation-form__gift-img"
+			/>
+		</section>
+
 		<footer class="footer">
 			<div class="footer__columns">
 				<div class="footer__column_main-info">

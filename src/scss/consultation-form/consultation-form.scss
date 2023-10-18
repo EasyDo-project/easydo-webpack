@@ -1,0 +1,152 @@
+.consultation-form {
+	padding: 0;
+	margin: 0 120px;
+	margin-bottom: 205px;
+	max-height: 606px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	column-gap: 43px;
+	background: #585ede url('../../images/form_bgr.png') no-repeat;
+	background-size: 729px 540px;
+	background-position: -7px 1px;
+	border-radius: 58px;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+	position: relative;
+	box-sizing: border-box;
+
+	&:before {
+		content: '';
+		width: 577px;
+		height: 520px;
+		position: absolute;
+		bottom: -7px;
+		left: -3px;
+		background-image: url('../../images/form_peoples.png');
+		background-size: contain;
+		z-index: 1;
+	}
+
+	&__header {
+		padding: 0;
+		margin: 0;
+		margin-top: 81px;
+		grid-column: 2 / 3;
+		grid-row: 1 / 2;
+		@include font(32px, 700, normal, $text-light-header);
+		text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+		z-index: 2;
+	}
+
+	&__leader {
+		padding: 18px;
+		margin: 0;
+		margin-top: -79px;
+		margin-left: 35px;
+		width: 349px;
+		height: 126px;
+		grid-column: 1 / 2;
+		grid-row: 3 / 4;
+		border-radius: 21px;
+		border: 1px solid #fff;
+		background: linear-gradient(
+			275deg,
+			rgba(255, 255, 255, 0.16) -0.15%,
+			rgba(255, 255, 255, 0) 98.98%
+		);
+		box-sizing: border-box;
+		z-index: 2;
+
+		&-name {
+			padding: 0;
+			margin: 0;
+			margin-bottom: 5px;
+			@include font(16px, 700, normal, $text-light-header);
+			text-transform: uppercase;
+			text-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+		}
+		&-description {
+			padding: 0;
+			margin: 0;
+			@include font(12px, 600, normal, $text-light-header);
+			text-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+		}
+	}
+
+	&__form {
+		padding: 0;
+		margin: 0;
+		margin-top: 26px;
+		width: fit-content;
+		grid-column: 2 / 3;
+		grid-row: 2 / 3;
+		display: flex;
+		flex-direction: column;
+		z-index: 2;
+	}
+
+	&__input {
+		padding: 13px 25px;
+		margin: 0;
+		margin-bottom: 14px;
+		width: 408px;
+		border-radius: 50px;
+		border: none;
+		outline: none;
+		@include font(16px, 500, 36px, $text-main);
+		box-sizing: border-box;
+
+		&::placeholder {
+			@include font(16px, 500, normal, $text-description);
+		}
+
+		&:last-of-type {
+			margin-bottom: 24px;
+		}
+	}
+
+	&__error {
+		//TODO
+	}
+
+	&__btn {
+		padding: 13px 17px;
+		margin: 0;
+		margin-bottom: 24px;
+		width: 408px;
+		@include font(16px, 700, 36px, $text-btn-dark);
+		text-transform: uppercase;
+		border-radius: 50px;
+		border: none;
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		&_disabled {
+			background: rgba(104, 104, 104, 0.5);
+			color: $text-btn-light;
+
+			&:hover {
+				cursor: not-allowed;
+			}
+		}
+	}
+
+	&__conf-policy {
+		padding: 0;
+		margin: 0;
+		max-width: 342px;
+		align-self: center;
+		@include font(13px, 500, normal, $text-optional);
+		text-align: center;
+	}
+
+	&__gift-img {
+		width: 241px;
+		height: 239px;
+		position: absolute;
+		bottom: -65px;
+		right: -72px;
+	}
+}
