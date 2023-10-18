@@ -7,3 +7,5 @@ export const program = [
 	`<span class="program__highlight">Видеовстречи с инструктором</span> по завершении каждой недели тренировок`,
 	`<span class="program__highlight">Постоянная поддержка</span> куратора онлайн`,
 ];
+
+export const clientsBlockHeader = 'Помогли клиентам более 30 клиник';
