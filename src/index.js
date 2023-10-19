@@ -1,3 +1,6 @@
 import './scss/index.scss';
 
-console.log('Hello World!');
+import { Scroll } from './components/Scroll';
+
+const scroll = new Scroll('.feedbacks__scroll');
+scroll.enableScroll();

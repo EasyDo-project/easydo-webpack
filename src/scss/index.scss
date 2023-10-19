@@ -1,1 +1,7 @@
 @use '../vendor/normalize.css';
+@use './fonts';
+@import './variables';
+
+@import '../scss/page/page';
+
+@import '../scss/feedbacks/feedbacks';
