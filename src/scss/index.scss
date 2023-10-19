@@ -1,7 +1,10 @@
 @use '../vendor/normalize.css';
 @use './fonts';
 @import './variables';
+@import './keyframes';
 
 @import '../scss/page/page';
-
+@import '../scss/assist/assist';
+@import '../scss/program/program';
+@import '../scss/footer/footer';
 @import '../scss/feedbacks/feedbacks';
