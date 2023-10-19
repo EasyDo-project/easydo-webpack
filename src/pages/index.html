@@ -147,17 +147,18 @@
 							required
 							minlength="2"
 							maxlength="50"
+							pattern="^[A-Za-zА-Яа-я\s]+$"
 						/>
-						<span class="consultation-form__error personName-error"></span>
 						<input
-							type="number"
+							type="text"
 							class="consultation-form__input"
 							placeholder="Ваш телефон"
 							id="personPhone"
 							name="personPhone"
+							pattern="^[\d\s\+\(\)\-]+$"
+							minlength="11"
 							required
 						/>
-						<span class="consultation-form__error personPhone-error"></span>
 						<button
 							type="submit"
 							class="consultation-form__btn consultation-form__btn_disabled"
