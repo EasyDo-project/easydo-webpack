@@ -1,0 +1,18 @@
+.form__item {
+    width: 404px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    height: 58px;
+    margin-bottom: 14px;
+    font-size: 16px;
+    font-family: 'Hauora', 'Inter', sans-serif;
+    vertical-align: bottom;
+}
+
+.form__item::placeholder {
+    padding-left: 23px;
+    font-size: 16px;
+    font-family: 'Hauora', 'Inter', sans-serif;
+    vertical-align: bottom;
+}

@@ -1,0 +1,12 @@
+.form__button-save {
+    width: 411px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    height: 64px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Hauora', 'Inter', sans-serif;
+    font-weight: bold;
+    color: #585EDE;
+}

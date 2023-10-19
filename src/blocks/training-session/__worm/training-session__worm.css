@@ -1,0 +1,13 @@
+.training-session__worm {
+    background-image: url('../../../images/worm.png');
+    object-fit: cover;
+    object-position: right bottom;
+    background-size: cover;
+    width: 717px;
+    height: 540px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 57px 0px 0px 0px;
+}

@@ -1,0 +1,9 @@
+.doctor__paragraph {
+    font-size: 12px;
+    font-weight: normal;
+    font-family: 'Hauora', 'Inter', sans-serif;
+    color: #fff;
+    padding: 3px 19px 19px;
+    margin: 0px;
+    line-height: 1.3;
+}

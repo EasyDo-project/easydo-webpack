@@ -1,0 +1,9 @@
+.appointment__title {
+    padding: 0px;
+    margin: 0px;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Hauora', 'Inter', sans-serif;
+    line-height: normal;
+    color: #fff;
+}

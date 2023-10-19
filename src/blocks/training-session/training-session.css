@@ -1,0 +1,9 @@
+.training-session {
+    width: 1160px;
+    height: 606px;
+    background-color: #585EDE;
+    margin: 0px auto;
+    border-radius: 57px;
+    position: relative;
+    z-index: -2;
+}

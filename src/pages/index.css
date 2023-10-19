@@ -1,0 +1,31 @@
+@import url('../vendor/normalize.css');
+@import url('../vendor/fonts/fonts.css');
+
+@import url("../blocks/link/link.css");
+@import url("../blocks/present/present.css");
+@import url("../blocks/rotation/rotation.css");
+
+@import url("../blocks/training-session/training-session.css");
+@import url("../blocks/training-session/__worm/training-session__worm.css");
+@import url("../blocks/training-session/__content/training-session__content.css");
+
+
+@import url("../blocks/doctor/__img/doctor__img.css");
+@import url("../blocks/doctor/__about/doctor__about.css");
+@import url("../blocks/doctor/__title/doctor__title.css");
+@import url("../blocks/doctor/__paragraph/doctor__paragraph.css");
+
+
+@import url("../blocks/appointment/appointment.css");
+@import url("../blocks/appointment/__title/appointment__title.css");
+@import url("../blocks/appointment/__agreement/appointment__agreement.css");
+
+
+
+
+@import url("../blocks/form/form.css");
+@import url("../blocks/form/__item/form__item.css");
+@import url("../blocks/form/__button-save/form__button-save.css");
+
+
+

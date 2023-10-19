@@ -1,0 +1,12 @@
+.doctor__img {
+    background-image: url('../../../images/people.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 606px;
+    -o-object-fit: cover;
+    object-fit: contain;
+    -o-object-position: right bottom;
+    object-position: right bottom;
+    width: 577px;
+    background-position: bottom;
+}

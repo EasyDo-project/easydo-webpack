@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Mesto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="page">
+  <header class="header">
+  </header>
+  <main class="content">
+
+    <section class="training-session">
+
+      
+        <div class="training-session__worm"></div>
+
+        <div class="training-session__content">
+
+          <div class="doctor">
+            <div class="doctor__img"></div>
+            <div class="doctor__about">
+              <h3 class="doctor__title">ЕКАТЕРИНА ЯРУТКИНА</h3>
+              <p class="doctor__paragraph">Ведущая программы и группы «Великолепная осанка 50+». Более 12 лет опыта и более 600 клиентов. Куратор программ восстановления после травм и операций в EASY DOO.</p>
+            </div>
+          </div>
+
+          <div class="appointment">
+            <h2 class="appointment__title">Получите бесплатную консультацию и тренировку в подарок</h2>
+
+            <form class="form" name="form" id="form" novalidate>
+                <input 
+                    id="form-name" 
+                    class="form__item" 
+                    type="text" 
+                    value="" 
+                    name="name" 
+                    placeholder="Имя"
+                    pattern="[a-zA-Zа-яёА-ЯЁ\s\-]+" 
+                    minlength="2" 
+                    maxlength="40" 
+                    data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
+                    required>
+                <span class="form-name-error"></span>
+                <input 
+                    id="form-tel" 
+                    class="form__item" 
+                    type="tel" 
+                    value="" 
+                    name="tel" 
+                    placeholder="Ваш телефон"
+                    minlength="2" 
+                    maxlength="200" 
+                    pattern="[a-zA-Zа-яёА-ЯЁ\s\-]+"
+                    data-error-message="Разрешены только цифры" 
+                    required>
+                <span class="form-tel-error"></span>
+                <button class="button form__button-save" type="submit">ЗАПИСАТЬСЯ</button>
+            </form>
+
+            <p class="appointment__agreement">Нажимая “Отправить заявку” вы соглашаетесь</br> 
+            с <a href="https://ya.ru/" class="link">политикой конфиденциальности</a></p>
+            
+          </div>
+        </div>
+
+        <div class="present rotation"></div>
+
+      
+    </section>
+
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+

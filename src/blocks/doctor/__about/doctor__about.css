@@ -1,0 +1,9 @@
+.doctor__about {
+    width: 349px;
+    backdrop-filter: blur(20px);
+    position: absolute;
+    left: 35px;
+    bottom: 35px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
