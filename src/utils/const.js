@@ -9,3 +9,11 @@ export const program = [
 ];
 
 export const clientsBlockHeader = 'Помогли клиентам более 30 клиник';
+
+export const validationConf = {
+	formClass: 'consultation-form__form',
+	inputClass: 'consultation-form__input',
+	inputErrorClass: 'consultation-form__input-error',
+	submitBtnClass: 'consultation-form__btn',
+	disabledSubmitBtnClass: 'consultation-form__btn_disabled',
+};
