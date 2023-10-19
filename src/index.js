@@ -3,6 +3,14 @@ import { clientsBlockHeader, validationConf } from './utils/const';
 import { footerDocuments, footerAbout } from './utils/constants.js';
 import { Validation } from './components/Validation';
 import { PhoneMask } from './components/PhoneMask';
+import { Program } from './components/Program';
+import { footerDocuments, footerAbout } from './utils/constants.js';
+import { clientsBlockHeader } from './utils/const';
+import { Scroll } from './components/Scroll';
+
+const scroll = new Scroll('.feedbacks__scroll');
+
+const program = new Program('#programElement', '.program__list');
 
 const clinicHeader = document.querySelector('.assist__header');
 
@@ -16,3 +24,5 @@ validation.enableValidation();
 
 const masking = new PhoneMask('#personPhone');
 masking.startMAsk();
+scroll.enableScroll();
+program.generateList();
