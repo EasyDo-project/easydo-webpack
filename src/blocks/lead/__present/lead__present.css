@@ -1,0 +1,19 @@
+.lead__present {
+    display: flex;
+    justify-content: space-between;
+    width: 279px;
+    margin: auto;
+    margin-left: 120px;
+}
+
+@media screen and (max-width: 1300px) {
+    .lead__present {
+        margin-left: 153px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .lead__present {
+        margin: auto;
+    }
+}
