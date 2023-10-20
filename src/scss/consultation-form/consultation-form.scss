@@ -321,3 +321,13 @@
 		}
 	}
 }
+
+@media screen and (max-width: 400px) {
+	.consultation-form {
+		background-position: center 240px;
+
+		&__form {
+			margin-top: 199px;
+		}
+	}
+}
