@@ -1,7 +1,7 @@
 .lead {
     margin: auto;
     max-width: 1400px;
-    background-image: url('../../../images/background.jpg');
+    background-image: url('../../images/background.jpg');
     background-size: 1400px 646px;
     object-fit: contain;
     object-position: right bottom;
