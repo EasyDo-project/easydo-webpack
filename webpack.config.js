@@ -62,20 +62,8 @@ const config = {
 				use: [stylesHandler, 'css-loader', 'postcss-loader'],
 			},
 			{
-				test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
+				test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif|mp4)$/i,
 				type: 'asset',
-			},
-			//{ test: /\.html$/i, use: [ { loader: 'html-loader?attrs[]=video:src' } ] },
-			//{ test: /\.(mov|mp4)$/i, use: [ { loader: 'url-loader?limit=10000&mimetype=video/mp4' } ] },
-			{
-				test: /\.(mov|mp4)$/i, use: [
-					{
-						loader: 'file-loader',
-						options: {
-							name: '[path][name].[ext]'
-						}
-					}
-				]
 			},
 
 			// Add your rules for custom modules here
