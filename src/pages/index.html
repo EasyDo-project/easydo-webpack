@@ -125,7 +125,121 @@
 					/>
 				</div>
 			</section>
-      <section class="feedbacks">
+			<section class="solving">
+				<h2 class="solving__title">
+					Новое <span class="solving__title_highlight">решение</span> старой
+					проблемы
+				</h2>
+				<div class="solving__container">
+					<h3 class="solving__title-block">Как было раньше</h3>
+					<img
+						class="solving__image"
+						src="<%=require('../images/was.png')%>"
+						alt="Как было раньше"
+					/>
+					<ul class="solving__list solving__list_was">
+						<li class="solving__item">
+							<p class="solving__text">
+								Надо
+								<span class="solving__text_highlight">самостоятельно</span>
+								искать тренера
+							</p>
+						</li>
+						<li class="solving__item">
+							<p class="solving__text">
+								Большой
+								<span class="solving__text_highlight">риск</span> попасть в руки
+								плохого специалиста или мошенника
+							</p>
+						</li>
+						<li class="solving__item">
+							<p class="solving__text">
+								Плохо продуманные программы,
+								<span class="solving__text_highlight">низкое качество</span>
+								материала
+							</p>
+						</li>
+						<li class="solving__item">
+							<p class="solving__text">
+								Групповые занятия
+								<span class="solving__text_highlight">не решают</span> ваши
+								<span class="solving__text_highlight"
+									>индивидуальные проблемы</span
+								>
+							</p>
+						</li>
+						<li class="solving__item">
+							<p class="solving__text">
+								<span class="solving__text_highlight">Высокая цена</span>
+								индивидуальных очных занятий
+							</p>
+						</li>
+					</ul>
+				</div>
+				<div class="solving__container">
+					<h3 class="solving__title-block">
+						Как стало возможно с
+						<span class="solving__title-block_highlight">EASYDOO</span>
+					</h3>
+					<video class="solving__video" loop autoplay controls>
+						<!-- <source src="../videos/become_4K.mp4" type="video/mp4" />
+						<source src="./become_4K.mp4" type="video/mp4" />
+						<source src="../videos/become_mobile.mp4" type="video/mp4" /> -->
+					</video>
+					<ul class="solving__list solving__list_become">
+						<li class="solving__item">
+							<p class="solving__text">
+								Вся программа занятий
+								<span class="solving__text_highlight">на одной платформе</span>
+							</p>
+						</li>
+						<li class="solving__item">
+							<p class="solving__text">
+								Занятия ведут
+								<span class="solving__text_highlight"
+									>только аккредитованные</span
+								>
+								эксперты
+							</p>
+						</li>
+						<li class="solving__item">
+							<p class="solving__text">
+								Специальный чат, где можно
+								<span class="solving__text_highlight">найти поддержку</span> у
+								тех, кто уже прошел программу EASY DOO
+							</p>
+						</li>
+						<li class="solving__item">
+							<p class="solving__text">
+								<span class="solving__text_highlight"
+									>Инструктор заинтересован</span
+								>
+								в вашем выздоровлении, так как у него есть рейтинг
+							</p>
+						</li>
+						<li class="solving__item">
+							<p class="solving__text">
+								Ваш
+								<span class="solving__text_highlight">прогресс в цифрах</span>
+								отображается в личном кабинете
+							</p>
+						</li>
+						<li class="solving__item">
+							<p class="solving__text">
+								<span class="solving__text_highlight"
+									>Ежедневный интерактив</span
+								>
+								с инструктором становится
+								<span class="solving__text_highlight">“контроль-пинком”</span>
+							</p>
+						</li>
+					</ul>
+					<a class="solving__button-try" href="#consultation-form"
+						>Попробовать бесплатно</a
+					>
+				</div>
+			</section>
+			<section class="feedbacks">
 				<h2 class="feedbacks__title">Отзывы</h2>
 				<ul class="feedbacks__scroll">
 					<li class="feedbacks__item">
@@ -253,62 +367,62 @@
 					</mark>
 				</div>
 			</section>
-      <section class="consultation-form">
-			<div class="consultation-form__gift-wrap">
-				<div class="consultation-form__wrapper">
-					<h2 class="consultation-form__header">
-						Получите бесплатную консультацию и тренировку в&nbsp;подарок
-					</h2>
-					<p class="consultation-form__description">
-						Вас проконсультирует один из наших аккредитованных экспертов
-					</p>
-					<form
-						action="#"
-						class="consultation-form__form"
-						id="consultationForm"
-						novalidate
-					>
-						<input
-							type="text"
-							class="consultation-form__input"
-							placeholder="Имя"
-							id="personName"
-							name="personName"
-							required
-							minlength="2"
-							maxlength="50"
-							pattern="^[A-Za-zА-Яа-я\s]+$"
-						/>
-						<input
-							type="text"
-							class="consultation-form__input"
-							placeholder="Ваш телефон"
-							id="personPhone"
-							name="personPhone"
-							pattern="^[\d\s\+\(\)\-]+$"
-							minlength="11"
-							required
-						/>
-						<button
-							type="submit"
-							class="consultation-form__btn consultation-form__btn_disabled"
-							disabled
-						>
-							записаться
-						</button>
-						<p class="consultation-form__conf-policy">
-							Нажимая “Отправить заявку” вы соглашаетесь с политикой
-							конфиденциальности
+			<section class="consultation-form" id="consultation-form">
+				<div class="consultation-form__gift-wrap">
+					<div class="consultation-form__wrapper">
+						<h2 class="consultation-form__header">
+							Получите бесплатную консультацию и тренировку в&nbsp;подарок
+						</h2>
+						<p class="consultation-form__description">
+							Вас проконсультирует один из наших аккредитованных экспертов
 						</p>
-					</form>
+						<form
+							action="#"
+							class="consultation-form__form"
+							id="consultationForm"
+							novalidate
+						>
+							<input
+								type="text"
+								class="consultation-form__input"
+								placeholder="Имя"
+								id="personName"
+								name="personName"
+								required
+								minlength="2"
+								maxlength="50"
+								pattern="^[A-Za-zА-Яа-я\s]+$"
+							/>
+							<input
+								type="text"
+								class="consultation-form__input"
+								placeholder="Ваш телефон"
+								id="personPhone"
+								name="personPhone"
+								pattern="^[\d\s\+\(\)\-]+$"
+								minlength="11"
+								required
+							/>
+							<button
+								type="submit"
+								class="consultation-form__btn consultation-form__btn_disabled"
+								disabled
+							>
+								записаться
+							</button>
+							<p class="consultation-form__conf-policy">
+								Нажимая “Отправить заявку” вы соглашаетесь с политикой
+								конфиденциальности
+							</p>
+						</form>
+					</div>
+					<img
+						src="<%=require('../images/form_gift.png')%>"
+						alt=""
+						class="consultation-form__gift-img"
+					/>
 				</div>
-				<img
-					src="<%=require('../images/form_gift.png')%>"
-					alt=""
-					class="consultation-form__gift-img"
-				/>
-			</div>
-		</section>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__columns">
