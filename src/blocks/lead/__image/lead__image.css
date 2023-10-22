@@ -1,31 +1,31 @@
 .lead__image {
-    background-image: url('../../../images/hero1.png');
-    background-size: 636px 715px;
-    width: 636px;
-    height: 715px;
-    position: absolute;
-    right: 78px;
-    bottom: -139px;
+	background-image: url('../../../images/hero1.png');
+	background-size: 636px 715px;
+	width: 636px;
+	height: 715px;
+	position: absolute;
+	right: 78px;
+	bottom: -139px;
 }
 
 @media screen and (max-width: 1300px) {
-    .lead__image {
-        background-image: url('../../../images/hero2.png');
-        background-size: 600px 518px;
-        width: 600px;
-        height: 518px;
-        right: 0px;
-        bottom: -62px;
-        z-index: -1;
-    }
+	.lead__image {
+		background-image: url('../../../images/hero2.png');
+		background-size: 600px 518px;
+		width: 600px;
+		height: 518px;
+		right: 0px;
+		bottom: -62px;
+		z-index: -1;
+	}
 }
 
 @media screen and (max-width: 440px) {
-    .lead__image {
-        background-image: url('../../../images/hero3.png');
-        background-size: 300px 338px;
-        width: 300px;
-        height: 338px;
-        top: 402px;
-    }
+	.lead__image {
+		background-image: url('../../../images/hero3.png');
+		background-size: 300px 338px;
+		width: 300px;
+		height: 338px;
+		top: 402px;
+	}
 }

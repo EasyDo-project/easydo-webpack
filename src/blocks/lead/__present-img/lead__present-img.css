@@ -1,8 +1,8 @@
 .lead__present-img {
-    background-image: url('../../../images/present.png');
-    object-fit: contain;
-    object-position: right bottom;
-    background-repeat: no-repeat;
-    width: 67px;
-    height: 67px;
+	background-image: url('../../../images/present.png');
+	object-fit: contain;
+	object-position: right bottom;
+	background-repeat: no-repeat;
+	width: 67px;
+	height: 67px;
 }

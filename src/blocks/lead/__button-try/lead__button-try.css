@@ -1,26 +1,26 @@
 .lead__button-try {
-    display: block;
-    width: 279px;
-    height: 64px;
-    border: none;
-    border-radius: 50px;
-    margin: auto;
-    margin-top: 43px;
-    margin-left: 120px;
-    cursor: pointer;
-    background-color: #585EDE;
+	display: block;
+	width: 279px;
+	height: 64px;
+	border: none;
+	border-radius: 50px;
+	margin: auto;
+	margin-top: 43px;
+	margin-left: 120px;
+	cursor: pointer;
+	background-color: #585ede;
 }
 
 @media screen and (max-width: 1300px) {
-    .lead__button-try {
-        margin-top: 14px;
-        margin-left: 153px;
-    }
+	.lead__button-try {
+		margin-top: 14px;
+		margin-left: 153px;
+	}
 }
 
 @media screen and (max-width: 800px) {
-    .lead__button-try {
-        margin-top: 23px;
-        margin: auto;
-    }
+	.lead__button-try {
+		margin-top: 23px;
+		margin: auto;
+	}
 }
