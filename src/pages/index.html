@@ -134,6 +134,39 @@
 					/>
 				</div>
 			</section>
+			<section class="solving">
+				<div class="solving__background"></div>
+				<h2 class="solving__title">
+					Новое <span class="solving__title_highlight">решение</span> старой
+					проблемы
+				</h2>
+				<div class="solving__container">
+					<h3 class="solving__title-block">Как было раньше</h3>
+					<img
+						class="solving__image"
+						src="<%=require('../images/was.png')%>"
+						alt="Как было раньше"
+					/>
+					<ul class="solving__list solving__list_was"></ul>
+				</div>
+				<div class="solving__container">
+					<h3 class="solving__title-block">
+						Как стало возможно с
+						<span class="solving__title-block_highlight">EASYDOO</span>
+					</h3>
+					<video class="solving__video" loop autoplay muted>
+						<source
+							class="solving__video_dekstop"
+							src="<%=require('../videos/become_4K.mp4')%>"
+							type="video/mp4"
+						/>
+					</video>
+					<ul class="solving__list solving__list_become"></ul>
+					<a class="solving__button-try" href="#consultation-form"
+						>Попробовать бесплатно</a
+					>
+				</div>
+			</section>
 			<section class="feedbacks">
 				<h2 class="feedbacks__title">Отзывы</h2>
 				<ul class="feedbacks__scroll">
@@ -262,7 +295,7 @@
 					</mark>
 				</div>
 			</section>
-			<section class="consultation-form">
+			<section class="consultation-form" id="consultation-form">
 				<div class="consultation-form__gift-wrap">
 					<div class="consultation-form__wrapper">
 						<h2 class="consultation-form__header">
@@ -404,6 +437,11 @@
 			<li class="program__list-el">
 				<span class="program__counter"></span>
 				<p class="program__paragraph"></p>
+			</li>
+		</template>
+		<template id="solvingElement">
+			<li class="solving__item">
+				<p class="solving__text"></p>
 			</li>
 		</template>
 	</body>
