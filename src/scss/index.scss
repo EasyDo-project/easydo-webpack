@@ -1,1 +1,6 @@
 @use '../vendor/normalize.css';
+@use './fonts';
+
+@import './variables';
+@import './page/page.scss';
+@import './header/header.scss';
