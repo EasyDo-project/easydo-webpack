@@ -1,0 +1,94 @@
+.tariff {
+	padding: 0;
+	margin: 0 120px;
+	margin-bottom: 168px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	row-gap: 16px;
+	background: url('../../images/tariffs_bgr.png') no-repeat;
+	background-position: 91px -579px;
+	overflow: visible;
+
+	&__header {
+		padding: 0;
+		margin: 0;
+		margin-bottom: 40px;
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+		@include font(64px, 700, 64px, $text-main);
+	}
+
+	&__description {
+		margin-top: 115px;
+		max-width: 445px;
+		grid-column: 1 / 2;
+		grid-row: 1 / 3;
+
+		&-el {
+			padding: 0;
+			margin: 0;
+			margin-bottom: 25px;
+			@include font(18px, 500, 25px, $text-description);
+		}
+	}
+
+	&__highlight {
+		@include font(18px, 700, 25px, $text-main);
+	}
+
+	&__tariffs {
+		max-width: 560px;
+		grid-column: 2 / 3;
+		grid-row: 1 / 4;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__try-btn {
+		padding: 23px 41px;
+		margin: 0;
+		margin-top: 14px;
+		margin-left: -8px;
+		max-width: 306px;
+		max-height: 64px;
+		grid-column: 1 / 2;
+		grid-row: 3 / 4;
+		background-color: $btn-main-dark;
+		@include font(16px, 700, normal, $btn-cut);
+		text-decoration: none;
+		text-transform: uppercase;
+		border-radius: 50px;
+		box-shadow: 0px 4px 17px 0px rgba(62, 70, 249, 0.37);
+		box-sizing: border-box;
+
+		&:hover {
+			background-color: $btn-hovered;
+		}
+	}
+
+	&__gift {
+		padding: 0;
+		padding-left: 71px;
+		margin: 0;
+		margin-top: 106px;
+		grid-column: 1 / 2;
+		grid-row: 3 / 4;
+		@include font(16px, 600, normal, $text-highlighted);
+		position: relative;
+		text-transform: uppercase;
+
+		&:before {
+			content: '';
+			width: 82px;
+			height: 64px;
+			background: url('../../images/form_gift.png') no-repeat;
+			background-position: center;
+			background-size: cover;
+			position: absolute;
+			top: -27px;
+			left: -13px;
+			transform: rotate(21deg);
+		}
+	}
+}
