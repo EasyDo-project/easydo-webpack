@@ -11,7 +11,6 @@ import { Solving } from './components/Solving';
 const scroll = new Scroll('.feedbacks__scroll');
 
 const program = new Program('#programElement', '.program__list');
-
 const solvingWas = new Solving('#solvingElement', '.solving__list_was');
 const solvingBecome = new Solving('#solvingElement', '.solving__list_become');
 
@@ -28,6 +27,6 @@ validation.enableValidation();
 const masking = new PhoneMask('#personPhone');
 masking.startMAsk();
 scroll.enableScroll();
-program.generateList();
 solvingWas.generateList(solvingWasText);
 solvingBecome.generateList(solvingBecomeText);
+program.generateList();
