@@ -20,7 +20,7 @@
 	}
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 835px) {
 	.lead__image {
 		background-image: url('../../../images/hero3.png');
 		background-size: 300px 338px;

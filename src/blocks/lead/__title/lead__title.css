@@ -17,10 +17,15 @@
 	}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 710px) {
 	.lead__title {
 		padding-top: 30px;
 		margin-left: 20px;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.lead__title {
 		font-weight: 600;
 		font-size: 24px;
 	}

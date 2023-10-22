@@ -12,7 +12,13 @@
 	}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 710px) {
+	.lead__present {
+		margin-left: 20px;
+	}
+}
+
+@media screen and (max-width: 560px) {
 	.lead__present {
 		margin: auto;
 	}
