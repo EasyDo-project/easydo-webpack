@@ -31,6 +31,7 @@
 		margin-right: 14px;
 		@include font(18px, 500, normal, $text-description);
 	}
+
 	&__discount {
 		padding: 3px 7px;
 		margin: 0;
@@ -82,18 +83,23 @@
 		&_video {
 			background: url('../../images/tariffs_video.svg');
 		}
+
 		&_introduction {
 			background: url('../../images/tariffs_stickynote.svg');
 		}
+
 		&_first-result {
 			background: url('../../images/tariffs_like.svg');
 		}
+
 		&_editing {
 			background: url('../../images/tariffs_edit-2.svg');
 		}
+
 		&_result {
 			background: url('../../images/tariffs_cup.svg');
 		}
+
 		&_star {
 			background: url('../../images/tariffs_star.svg');
 		}
@@ -104,4 +110,8 @@
 		grid-row: 1 / 3;
 		justify-self: end;
 	}
+}
+
+.tariff__svg > svg > path {
+	fill: red;
 }
