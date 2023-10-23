@@ -168,6 +168,7 @@
 			color: $text-light-header;
 		}
 	}
+
 	&__cost {
 		padding: 0;
 		margin: 0;
@@ -178,5 +179,11 @@
 		&_popular {
 			color: $text-popular;
 		}
+	}
+}
+
+@media screen and (max-width: 1155px) {
+	.tariff-card {
+		width: 700px; //todo поправить, не резиново
 	}
 }

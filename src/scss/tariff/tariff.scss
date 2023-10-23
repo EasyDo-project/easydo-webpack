@@ -30,6 +30,10 @@
 			margin: 0;
 			margin-bottom: 25px;
 			@include font(18px, 500, 25px, $text-description);
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
 		}
 	}
 
@@ -91,6 +95,45 @@
 			top: -27px;
 			left: -13px;
 			transform: rotate(21deg);
+		}
+	}
+}
+
+@media screen and (max-width: 1155px) {
+	.tariff {
+		margin: 0 auto;
+		margin-bottom: 93px;
+		max-width: 700px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		&__header {
+			margin-bottom: 20px;
+			order: 1;
+		}
+
+		&__description {
+			margin-top: 0;
+			margin-bottom: 39px;
+			max-width: 700px;
+			order: 2;
+			text-align: justify;
+		}
+
+		&__tariffs {
+			max-width: 700px;
+			order: 5;
+		}
+
+		&__try-btn {
+			order: 3;
+		}
+		&__gift {
+			margin-top: 10px;
+			margin-bottom: 60px;
+			order: 4;
 		}
 	}
 }
