@@ -34,13 +34,20 @@ export class Validation {
 	}
 
 	#isValid(input) {
+		const hasInvalidFieldInForm = this.#arrayInputs.some((input) => {
+			return input.validity.valid === false;
+		});
 		const hasInvalidField = !input.validity.valid;
 
 		if (hasInvalidField) {
 			this.#showErrorOnInput(input);
-			this.#disableSubmitBtn();
 		} else {
 			this.#hideErrorOnInput(input);
+		}
+
+		if (hasInvalidFieldInForm) {
+			this.#disableSubmitBtn();
+		} else {
 			this.#enableSubmitBtn();
 		}
 	}
