@@ -6,8 +6,8 @@
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(3, 1fr);
 	row-gap: 16px;
-	background: url('../../images/tariffs_bgr.png') no-repeat;
-	background-position: 91px -579px;
+	//background: url('../../images/tariffs_bgr.png') no-repeat; //TODO Поправить на абсолютный блок где-то на фоне
+	//background-position: 91px -579px;
 	overflow: visible;
 
 	&__header {
