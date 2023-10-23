@@ -1,3 +1,4 @@
+import './blocks/index.css';
 import './scss/index.scss';
 import { clientsBlockHeader, validationConf } from './utils/const';
 import { footerDocuments, footerAbout } from './utils/constants.js';
