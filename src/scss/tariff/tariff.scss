@@ -6,9 +6,22 @@
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(3, 1fr);
 	row-gap: 16px;
-	//background: url('../../images/tariffs_bgr.png') no-repeat; //TODO Поправить на абсолютный блок где-то на фоне
-	//background-position: 91px -579px;
-	overflow: visible;
+	column-gap: 10px;
+	position: relative;
+
+	&:after {
+		content: '';
+		position: absolute;
+		width: 2109px;
+		height: 1845px;
+		top: -150px;
+		left: -80px;
+		background: url('../../images/tariffs_bgr.png') no-repeat 161px -329px / 1029px
+				1034px,
+			url('../../images/tariffs_bgr2.png') no-repeat -128px -400px / 1484px
+				1482px;
+		z-index: 1;
+	}
 
 	&__header {
 		padding: 0;
@@ -17,6 +30,7 @@
 		grid-column: 1 / 2;
 		grid-row: 1 / 2;
 		@include font(64px, 700, 64px, $text-main);
+		z-index: 2;
 	}
 
 	&__description {
@@ -24,6 +38,7 @@
 		max-width: 445px;
 		grid-column: 1 / 2;
 		grid-row: 1 / 3;
+		z-index: 2;
 
 		&-el {
 			padding: 0;
@@ -49,6 +64,7 @@
 		display: flex;
 		flex-direction: column;
 		row-gap: 16px;
+		z-index: 2;
 	}
 
 	&__try-btn {
@@ -67,6 +83,8 @@
 		border-radius: 50px;
 		box-shadow: 0 4px 17px 0 rgba(62, 70, 249, 0.37);
 		box-sizing: border-box;
+		z-index: 2;
+		transition: all 0.5s ease-in-out;
 
 		&:hover {
 			background-color: $btn-hovered;
@@ -83,6 +101,7 @@
 		@include font(16px, 600, normal, $text-highlighted);
 		position: relative;
 		text-transform: uppercase;
+		z-index: 2;
 
 		&:before {
 			content: '';
@@ -166,9 +185,11 @@
 		&__header {
 			@include font(30px, 700, normal, $text-main);
 		}
+
 		&__description-el {
 			@include font(16px, 500, normal, $text-description);
 		}
+
 		&__highlight {
 			@include font(16px, 700, normal, $text-main);
 		}
