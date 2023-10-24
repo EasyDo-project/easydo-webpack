@@ -66,6 +66,7 @@
 		margin-top: 6px;
 		height: fit-content;
 		border-radius: 26px;
+		@include font(16px, 500, normal, $text-btn-dark);
 
 		&_light {
 			background-color: $btn-main-light;
@@ -184,6 +185,85 @@
 
 @media screen and (max-width: 1155px) {
 	.tariff-card {
-		width: 700px; //todo поправить, не резиново
+		max-width: 700px;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.tariff-card {
+		padding: 15px;
+		max-width: 300px;
+		height: fit-content;
+
+		&_popular:after {
+			bottom: initial;
+			right: initial;
+			top: 60px;
+			left: 15px;
+		}
+
+		&__about {
+			width: 228px;
+			grid-column: 1 / 3;
+			position: relative;
+			flex-wrap: wrap;
+		}
+
+		&__discount {
+			position: absolute;
+			top: -7px;
+			right: -47px;
+		}
+
+		&__list {
+			margin-top: 47px;
+			grid-column: 1 / 3;
+		}
+
+		&__prices {
+			margin-top: 40px;
+			grid-column: 2 / 3;
+		}
+
+		&__h3 {
+			@include font(18px, 600, normal, $text-price);
+
+			&_popular {
+				color: $text-light-header;
+			}
+		}
+
+		&__description {
+			@include font(14px, 500, normal, $text-description);
+
+			&_popular {
+				color: $text-popular;
+			}
+		}
+
+		&__list-el {
+			@include font(14px, 500, normal, $text-description);
+
+			&_popular {
+				color: $text-popular;
+			}
+		}
+
+		&__final-cost {
+			@include font(18px, 600, normal, $text-price);
+
+			&_popular {
+				color: $text-light-header;
+			}
+		}
+
+		&__cost {
+			@include font(14px, 500, normal, $text-description);
+
+			&_popular {
+				color: $text-popular;
+			}
+		}
 	}
 }

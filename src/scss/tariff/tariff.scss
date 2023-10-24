@@ -65,7 +65,7 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		border-radius: 50px;
-		box-shadow: 0px 4px 17px 0px rgba(62, 70, 249, 0.37);
+		box-shadow: 0 4px 17px 0 rgba(62, 70, 249, 0.37);
 		box-sizing: border-box;
 
 		&:hover {
@@ -130,10 +130,47 @@
 		&__try-btn {
 			order: 3;
 		}
+
 		&__gift {
 			margin-top: 10px;
 			margin-bottom: 60px;
 			order: 4;
+		}
+	}
+}
+
+@media screen and (max-width: 1155px) {
+	.tariff {
+		width: 100%;
+
+		&__tariffs {
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.tariff {
+		&__description {
+			padding: 0 20px;
+		}
+
+		&__tariffs {
+			width: initial;
+		}
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.tariff {
+		&__header {
+			@include font(30px, 700, normal, $text-main);
+		}
+		&__description-el {
+			@include font(16px, 500, normal, $text-description);
+		}
+		&__highlight {
+			@include font(16px, 700, normal, $text-main);
 		}
 	}
 }
