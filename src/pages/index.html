@@ -36,6 +36,64 @@
 					alt="Личный кабинет"
 				/>
 			</section>
+      <section class="icons">
+				<ul class="icons__list">
+					<li class="icons__item">
+						<img
+							class="icons__image"
+							src="<%=require('../images/icon__item1.svg')%>"
+							alt="Видеозапись"
+						/>
+						<p class="icons__description">
+							Индивидуальный комплекс ежедневных видео-тренировок
+						</p>
+					</li>
+
+					<li class="icons__item">
+						<img
+							class="icons__image"
+							src="<%=require('../images/icon__item2.svg')%>"
+							alt="Уровень"
+						/>
+						<p class="icons__description">
+							Для любого возраста и уровня подготовки
+						</p>
+					</li>
+
+					<li class="icons__item">
+						<img
+							class="icons__image"
+							src="<%=require('../images/icon__item3.svg')%>"
+							alt="Чат-поддержка"
+						/>
+						<p class="icons__description">
+							Поддержка инструктора - живое общение в чате 24/7
+						</p>
+					</li>
+
+					<li class="icons__item">
+						<img
+							class="icons__image"
+							src="<%=require('../images/icon__item4.svg')%>"
+							alt="Интернет"
+						/>
+						<p class="icons__description">
+							Занимайтесь дома, на даче и везде, где есть интернет
+						</p>
+					</li>
+
+					<li class="icons__item">
+						<img
+							class="icons__image"
+							src="<%=require('../images/icon__item5.svg')%>"
+							alt="Специалист"
+						/>
+						<p class="icons__description">
+							Занятия ведут только аккредитованные эксперты
+						</p>
+					</li>
+				</ul>
+			</section>
 			<section class="assist">
 				<h2 class="assist__header"></h2>
 				<div class="assist__container">
@@ -382,6 +440,131 @@
 						class="consultation-form__gift-img"
 					/>
 				</div>
+			</section>
+			<section class="tariff">
+				<h2 class="tariff__header">Тарифы</h2>
+				<div class="tariff__description">
+					<p class="tariff__description-el">
+						Программа EASY DOO разработана таким образом, чтобы Вы получили
+						полноценную профессиональную помощь и существенно сократили срок
+						восстановления.
+					</p>
+					<p class="tariff__description-el">
+						Познакомьтесь с EASY DOO, записавшись на&nbsp;<span
+							class="tariff__highlight"
+							>бесплатную консультацию</span
+						>
+						с инструктором! Однодневная
+						<span class="tariff__highlight"
+							>программа тренировки в подарок!</span
+						>
+					</p>
+				</div>
+				<div class="tariff__tariffs">
+					<div class="tariff__card tariff-card">
+						<div class="tariff-card__about">
+							<h3 class="tariff-card__h3">7 дней</h3>
+							<p class="tariff-card__description">попробуйте</p>
+						</div>
+						<ul class="tariff-card__list">
+							<li class="tariff-card__list-el">
+								<span class="tariff-card__icon tariff-card__icon_video"></span>
+								1 видеовстреча с инструктором
+							</li>
+							<li class="tariff-card__list-el">
+								<span
+									class="tariff-card__icon tariff-card__icon_introduction"
+								></span>
+								Знакомство с программой тренировок
+							</li>
+							<li class="tariff-card__list-el">
+								<span
+									class="tariff-card__icon tariff-card__icon_first-result"
+								></span>
+								Получение первого результата
+							</li>
+						</ul>
+						<div class="tariff-card__prices">
+							<p class="tariff-card__final-cost">5990 ₽</p>
+						</div>
+					</div>
+					<div class="tariff__card tariff-card tariff-card_popular">
+						<div class="tariff-card__about">
+							<h3 class="tariff-card__h3 tariff-card__h3_popular">30 дней</h3>
+							<p
+								class="tariff-card__description tariff-card__description_popular"
+							>
+								изменитесь
+							</p>
+							<p class="tariff-card__discount tariff-card__discount_light">
+								-38%
+							</p>
+						</div>
+						<ul class="tariff-card__list">
+							<li class="tariff-card__list-el tariff-card__list-el_popular">
+								<span
+									class="tariff-card__icon tariff-card__icon_video-popular"
+								></span>
+								4 видеовстречи с инструктором
+							</li>
+							<li class="tariff-card__list-el tariff-card__list-el_popular">
+								<span
+									class="tariff-card__icon tariff-card__icon_editing-popular"
+								></span>
+								Коррекция программы занятий каждые 3 дня
+							</li>
+							<li class="tariff-card__list-el tariff-card__list-el_popular">
+								<span
+									class="tariff-card__icon tariff-card__icon_result-popular"
+								></span>
+								Достижение заметного результата
+							</li>
+						</ul>
+						<div class="tariff-card__prices">
+							<p
+								class="tariff-card__final-cost tariff-card__final-cost_popular"
+							>
+								14 990 ₽
+							</p>
+							<p class="tariff-card__cost tariff-card__cost_popular">
+								23 960 ₽
+							</p>
+						</div>
+					</div>
+					<div class="tariff__card tariff-card">
+						<div class="tariff-card__about">
+							<h3 class="tariff-card__h3">90 дней</h3>
+							<p class="tariff-card__description">получите максимум</p>
+							<p class="tariff-card__discount tariff-card__discount_dark">
+								-45%
+							</p>
+						</div>
+						<ul class="tariff-card__list">
+							<li class="tariff-card__list-el">
+								<span class="tariff-card__icon tariff-card__icon_video"></span>
+								12 видеовстреч с инструктором
+							</li>
+							<li class="tariff-card__list-el">
+								<span
+									class="tariff-card__icon tariff-card__icon_editing"
+								></span>
+								Коррекция программы занятий каждые 3 дня
+							</li>
+							<li class="tariff-card__list-el">
+								<span class="tariff-card__icon tariff-card__icon_star"></span>
+								Восстановление подвижности
+							</li>
+						</ul>
+						<div class="tariff-card__prices">
+							<p class="tariff-card__final-cost">39 950 ₽</p>
+							<p class="tariff-card__cost">44 970 ₽</p>
+						</div>
+					</div>
+				</div>
+				<a href="#consultation-form" class="tariff__try-btn"
+					>Попробовать бесплатно</a
+				>
+				<p class="tariff__gift">Тренировка в подарок</p>
 			</section>
 		</main>
 		<footer class="footer">

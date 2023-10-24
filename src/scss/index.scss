@@ -1,5 +1,10 @@
 @use '../vendor/normalize.css';
 @use './fonts';
+
+@import './variables';
+@import '../scss/page/page.scss';
+@import '../scss/icons/icons.scss';
+
 @import './variables';
 @import './keyframes';
 
@@ -13,3 +18,6 @@
 @import '../scss/feedbacks/feedbacks';
 @import '../scss/solving/solving';
 @import '../scss/popup/popup';
+@import 'tariff/tariff';
+@import 'tariff-card/tariff-card';
+@import 'content/content';
