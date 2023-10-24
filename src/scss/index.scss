@@ -2,15 +2,14 @@
 @use './fonts';
 
 @import './variables';
+@import './page/page.scss';
+@import './header/header.scss';
 @import '../scss/page/page.scss';
 @import '../scss/icons/icons.scss';
-
 @import './variables';
 @import './keyframes';
-
 @import '../scss/page/page';
 @import '../scss/assist/assist';
-
 @import '../scss/consultation-form/consultation-form';
 @import '../scss/footer/footer.scss';
 @import '../scss/program/program';
