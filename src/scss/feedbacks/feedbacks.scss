@@ -1,0 +1,145 @@
+.feedbacks {
+	margin: 0 auto;
+	padding: 0;
+	padding-bottom: 157px;
+	max-width: 1160px;
+	display: flex;
+	flex-direction: column;
+
+	&__title {
+		margin: 0;
+		text-align: center;
+		@include font(64px, 700, normal, $text-main);
+	}
+
+	&__scroll {
+		width: 100%;
+		margin: 0;
+		padding: 61px 0 66px;
+		position: relative;
+		display: flex;
+		gap: 24px;
+		list-style-type: none;
+		cursor: grab;
+		overflow-x: scroll;
+		scrollbar-width: none;
+	}
+
+	&__item {
+		display: flex;
+		position: relative;
+	}
+
+	&__image {
+		max-height: 500px;
+	}
+
+	&__rating-image {
+		display: flex;
+		position: absolute;
+		top: 39px;
+		left: 105px;
+	}
+
+	&__wrapper-button {
+		align-self: center;
+		position: relative;
+	}
+
+	&__button-link {
+		display: flex;
+		width: 233px;
+		height: 64px;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50px;
+		border: 1px solid #585ede;
+		cursor: pointer;
+		text-decoration: none;
+		text-transform: uppercase;
+		@include font(16px, 700, normal, $text-highlighted);
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+			border-color 0.2s ease-in-out;
+	}
+
+	&__rating {
+		display: flex;
+		position: absolute;
+		justify-content: center;
+		align-items: center;
+		width: 96px;
+		height: 29px;
+		border-radius: 8.5px;
+		background-color: $btn-main-dark;
+		top: -8px;
+		left: 156px;
+		transform: rotate(14.5deg);
+		@include font(19px, 600, normal, $text-btn-light);
+	}
+
+	&__logo-yandex {
+		position: absolute;
+		left: 0;
+		border-radius: 8.5px;
+	}
+
+	&__ico-star {
+		position: absolute;
+		right: 10px;
+	}
+
+	&__scroll::-webkit-scrollbar {
+		display: none;
+	}
+
+	&__button-link:hover {
+		background-color: $btn-hover;
+		border-color: $btn-hover;
+		color: $text-btn-light;
+	}
+}
+
+@media screen and (max-width: 1250px) {
+	.feedbacks {
+		max-width: 900px;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	.feedbacks {
+		max-width: 610px;
+
+		&__title {
+			@include font(48px, 700, normal, $text-main);
+		}
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.feedbacks {
+		max-width: 390px;
+		padding-bottom: 78px;
+
+		&__title {
+			@include font(30px, 700, normal, $text-main);
+		}
+
+		&__scroll {
+			padding: 24px 0 42px;
+		}
+
+		&__image {
+			max-height: 340px;
+		}
+
+		&__button-link {
+			width: 300px;
+		}
+	}
+}
+
+@media screen and (max-width: 410px) {
+	.feedbacks {
+		max-width: 300px;
+	}
+}
