@@ -3,19 +3,27 @@
   max-width: 1160px;
   margin: 0 auto;
   justify-content: space-between;
+  position: relative;
 
   &__logo {
     width: 137px;
     height: 35px;
     object-fit: contain;
     padding: 23px 40px 22px 0px;
+    position: fixed;
+    top: 0;
+    transition: top 0.3s ease;
+
+    &_hidden {
+      top: -80px;
+    }
   }
 
   &__menu {
     display: flex;
     flex-direction: row;
     list-style: none;
-    padding: 29px 0;
+    padding: 29px 0 29px 217px;
     margin: 0;
     align-items: center;
     @include font(16px, 500, normal, $text-main);
@@ -29,6 +37,7 @@
 
   &__wrap {
     display: flex;
+    position: relative;
   } 
   
   &__media {
@@ -81,6 +90,14 @@
     border-radius: 50px;
     width: 39px;
     height: 39px;
+    position: fixed;
+    top: 8px;
+    right: 8px;
+    transition: top 0.3s ease;
+
+    &_hidden {
+      top: -50px;
+    }
   }
   
   &__mobile-button:hover {
@@ -163,7 +180,6 @@
 
     &__mobile-button {
       display: block;
-      margin: 8px 8px 3px 0;
     }
 
     &__menu-item {

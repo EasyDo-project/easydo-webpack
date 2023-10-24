@@ -15,14 +15,12 @@ export default class Header {
 
   closeSlideOut() {
     this.slideOut.classList.remove('header__mobile-slider_shown');
-    this.logo.style.display = 'block';
-		this.openButton.style.display = 'block';
+    this._headerSlideDown()
   }
 
   openSlideOut() {
     this.slideOut.classList.add('header__mobile-slider_shown');
-    this.logo.style.display = 'none';
-		this.openButton.style.display = 'none';
+    this._headerSlideUp();
   }
 
   handleWindowResize() {
@@ -33,6 +31,16 @@ export default class Header {
     } else {
       this.openButton.style.display = 'none';
     }
+  }
+
+  _headerSlideUp() {
+    this.logo.classList.add('header__logo_hidden');
+    this.openButton.classList.add('header__mobile-button_hidden');
+  }
+
+  _headerSlideDown() {
+    this.logo.classList.remove('header__logo_hidden');
+    this.openButton.classList.remove('header__mobile-button_hidden');
   }
 
   setEventListeners() {
