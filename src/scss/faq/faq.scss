@@ -42,6 +42,14 @@
 		padding-top: 20px;
 	}
 
+	&__button {
+		transition: transform 0.3s;
+	}
+
+	&__rotate {
+		transform: rotate(45deg);
+	}
+
 	&:last-child {
 		margin-bottom: 346px;
 	}
@@ -50,7 +58,7 @@
 @media screen and (max-width: 1024px) {
 	.faq {
 		&__header {
-			@include font(32px, 700, normal, $text-main);
+			@include font(48px, 700, normal, $text-main);
 		}
 
 		&:last-child {
@@ -62,5 +70,17 @@
 @media screen and (max-width: 700px) {
 	.faq {
 		margin: 0 20px 0 20px;
+
+		&__header {
+			@include font(32px, 700, normal, $text-main);
+		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.faq {
+		&__header {
+			@include font(24px, 700, normal, $text-main);
+		}
 	}
 }

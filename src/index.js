@@ -13,7 +13,7 @@ const scroll = new Scroll('.feedbacks__scroll');
 const program = new Program('#programElement', '.program__list');
 const solvingWas = new Solving('#solvingElement', '.solving__list_was');
 const solvingBecome = new Solving('#solvingElement', '.solving__list_become');
-const faq = new Faq('.faq__container');
+const faq = new Faq('.faq__button');
 
 const clinicHeader = document.querySelector('.assist__header');
 const validation = new Validation(validationConf);
