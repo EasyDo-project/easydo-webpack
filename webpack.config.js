@@ -40,10 +40,6 @@ const config = {
 				loader: 'babel-loader',
 			},
 			{
-				test: /\.svg$/,
-				use: 'file-loader',
-			  },
-			{
 				test: /\.s[ac]ss$/i,
 				use: [
 					stylesHandler,
