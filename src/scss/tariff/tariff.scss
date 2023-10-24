@@ -1,0 +1,197 @@
+.tariff {
+	padding: 0;
+	margin: 0 120px;
+	margin-bottom: 168px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	row-gap: 16px;
+	column-gap: 10px;
+	position: relative;
+
+	&:after {
+		content: '';
+		position: absolute;
+		width: 2109px;
+		height: 1845px;
+		top: -150px;
+		left: -80px;
+		background: url('../../images/tariffs_bgr.png') no-repeat 161px -329px / 1029px
+				1034px,
+			url('../../images/tariffs_bgr2.png') no-repeat -128px -400px / 1484px
+				1482px;
+		z-index: 1;
+	}
+
+	&__header {
+		padding: 0;
+		margin: 0;
+		margin-bottom: 40px;
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+		@include font(64px, 700, 64px, $text-main);
+		z-index: 2;
+	}
+
+	&__description {
+		margin-top: 115px;
+		max-width: 445px;
+		grid-column: 1 / 2;
+		grid-row: 1 / 3;
+		z-index: 2;
+
+		&-el {
+			padding: 0;
+			margin: 0;
+			margin-bottom: 25px;
+			@include font(18px, 500, 25px, $text-description);
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&__highlight {
+		@include font(18px, 700, 25px, $text-main);
+	}
+
+	&__tariffs {
+		max-width: 560px;
+		grid-column: 2 / 3;
+		grid-row: 1 / 4;
+		justify-self: end;
+		display: flex;
+		flex-direction: column;
+		row-gap: 16px;
+		z-index: 2;
+	}
+
+	&__try-btn {
+		padding: 23px 41px;
+		margin: 0;
+		margin-top: -18px;
+		margin-left: -6px;
+		max-width: 306px;
+		max-height: 64px;
+		grid-column: 1 / 2;
+		grid-row: 3 / 4;
+		background-color: $btn-main-dark;
+		@include font(16px, 700, normal, $btn-cut);
+		text-decoration: none;
+		text-transform: uppercase;
+		border-radius: 50px;
+		box-shadow: 0 4px 17px 0 rgba(62, 70, 249, 0.37);
+		box-sizing: border-box;
+		z-index: 2;
+		transition: all 0.5s ease-in-out;
+
+		&:hover {
+			background-color: $btn-hovered;
+		}
+	}
+
+	&__gift {
+		padding: 0;
+		padding-left: 71px;
+		margin: 0;
+		margin-top: 73px;
+		grid-column: 1 / 2;
+		grid-row: 3 / 4;
+		@include font(16px, 600, normal, $text-highlighted);
+		position: relative;
+		text-transform: uppercase;
+		z-index: 2;
+
+		&:before {
+			content: '';
+			width: 82px;
+			height: 64px;
+			background: url('../../images/form_gift.png') no-repeat;
+			background-position: center;
+			background-size: cover;
+			position: absolute;
+			top: -27px;
+			left: -13px;
+			transform: rotate(21deg);
+		}
+	}
+}
+
+@media screen and (max-width: 1155px) {
+	.tariff {
+		margin: 0 auto;
+		margin-bottom: 93px;
+		max-width: 700px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		&__header {
+			margin-bottom: 20px;
+			order: 1;
+		}
+
+		&__description {
+			margin-top: 0;
+			margin-bottom: 39px;
+			max-width: 700px;
+			order: 2;
+			text-align: justify;
+		}
+
+		&__tariffs {
+			max-width: 700px;
+			order: 5;
+		}
+
+		&__try-btn {
+			order: 3;
+		}
+
+		&__gift {
+			margin-top: 10px;
+			margin-bottom: 60px;
+			order: 4;
+		}
+	}
+}
+
+@media screen and (max-width: 1155px) {
+	.tariff {
+		width: 100%;
+
+		&__tariffs {
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.tariff {
+		&__description {
+			padding: 0 20px;
+		}
+
+		&__tariffs {
+			width: initial;
+		}
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.tariff {
+		&__header {
+			@include font(30px, 700, normal, $text-main);
+		}
+
+		&__description-el {
+			@include font(16px, 500, normal, $text-description);
+		}
+
+		&__highlight {
+			@include font(16px, 700, normal, $text-main);
+		}
+	}
+}
