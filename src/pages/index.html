@@ -24,7 +24,7 @@
 				<div class="lead__present">
 					<div class="lead__present-img rotation"></div>
 					<p class="lead__present-text">ТРЕНИРОВКА В ПОДАРОК</p>
-          </div>
+				</div>
 				<div class="image lead__image"></div>
 			</section>
 			<section class="program">
@@ -149,6 +149,7 @@
 						alt="Clinic"
 						class="assist__image"
 					/>
+				</div>
 			</section>
 			<section class="solving">
 				<div class="solving__background"></div>
@@ -326,27 +327,42 @@
 							id="consultationForm"
 							novalidate
 						>
-							<input
-								type="text"
-								class="consultation-form__input"
-								placeholder="Имя"
-								id="personName"
-								name="personName"
-								required
-								minlength="2"
-								maxlength="50"
-								pattern="^[A-Za-zА-Яа-я\s]+$"
-							/>
-							<input
-								type="text"
-								class="consultation-form__input"
-								placeholder="Ваш телефон"
-								id="personPhone"
-								name="personPhone"
-								pattern="^[\d\s\+\(\)\-]+$"
-								minlength="11"
-								required
-							/>
+							<div class="consultation-form__input-container">
+								<input
+									type="text"
+									class="consultation-form__input"
+									placeholder="Имя"
+									id="personName"
+									name="personName"
+									required
+									minlength="2"
+									maxlength="50"
+									pattern="^[A-Za-zА-Яа-я\s]+$"
+									data-error-message="Имя может содержать только кириллические и латинские символы, а так же пробел"
+								/>
+								<p
+									class="consultation-form__error consultation-form__error_name personName-error"
+								>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								</p>
+							</div>
+							<div class="consultation-form__input-container">
+								<input
+									type="text"
+									class="consultation-form__input"
+									placeholder="Ваш телефон"
+									id="personPhone"
+									name="personPhone"
+									pattern="^[\d\s\+\(\)\-]+$"
+									required
+									data-error-message="Укажите телефон в формате +7"
+								/>
+								<p
+									class="consultation-form__error consultation-form__error_phone personPhone-error"
+								>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								</p>
+							</div>
 							<button
 								type="submit"
 								class="consultation-form__btn consultation-form__btn_disabled"
@@ -460,5 +476,16 @@
 				<p class="solving__text"></p>
 			</li>
 		</template>
+		<div class="popup popup__data-sent">
+			<div class="popup__container">
+				<img
+					src="<%=require('../images/done.svg')%>"
+					alt="Отправлено"
+					class="popup__image"
+				/>
+				<p class="popup__text">Спасибо! Данные успешно отправлены.</p>
+				<button class="popup__close">Закрыть</button>
+			</div>
+		</div>
 	</body>
 </html>

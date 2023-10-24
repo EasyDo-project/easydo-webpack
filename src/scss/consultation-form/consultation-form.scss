@@ -107,6 +107,32 @@
 		}
 	}
 
+	&__input-container {
+		position: relative;
+	}
+
+	&__error {
+		padding: 10px;
+		margin: 0;
+		position: absolute;
+		top: 63px;
+		left: 0;
+		max-width: 408px;
+		background: $btn-cut;
+		border-radius: 20px;
+		z-index: 2;
+		box-sizing: border-box;
+		font-size: 13px;
+		outline: 1px solid red;
+		visibility: hidden;
+		display: none;
+
+		&_visible {
+			visibility: visible;
+			display: block;
+		}
+	}
+
 	&__btn {
 		padding: 13px 17px;
 		margin: 0;
