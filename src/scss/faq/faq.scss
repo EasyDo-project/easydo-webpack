@@ -5,6 +5,8 @@
 	align-items: center;
 	overflow: hidden;
 	margin: 0 10vw 0 10vw;
+	position: relative;
+	z-index: 2;
 
 	&__header {
 		padding: 0;
