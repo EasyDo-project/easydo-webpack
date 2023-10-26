@@ -28,3 +28,5 @@
 Для сообщений коммитов используем [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/). На данном этапе дополнительный scope можно не указывать, сообщение коммита должно выглядеть следующим образом:
 
     feat: краткое описание выполненной работы
+
+Бриф [здесь](https://chlorinated-hortensia-ec4.notion.site/EasyDoo-4920d22915244be18bbd8a326d2fe8f0).
