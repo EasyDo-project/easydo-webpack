@@ -14,6 +14,7 @@ export const validationConf = {
 	formClass: 'consultation-form__form',
 	inputClass: 'consultation-form__input',
 	inputErrorClass: 'consultation-form__input-error',
+	visibleErrorMessage: 'consultation-form__error_visible',
 	submitBtnClass: 'consultation-form__btn',
 	disabledSubmitBtnClass: 'consultation-form__btn_disabled',
 };

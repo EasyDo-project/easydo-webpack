@@ -23,6 +23,21 @@ export class Validation {
 		input.classList.remove(this.#config.inputErrorClass);
 	}
 
+	#showErrorMessage(inputElement, errorText) {
+		const errorElement = this.#form.querySelector(`.${inputElement.id}-error`);
+
+		errorElement.textContent = errorText;
+		errorElement.classList.add(this.#config.visibleErrorMessage);
+	}
+
+	#hideErrorMessage(inputElement) {
+		const errorElement = this.#form.querySelector(`.${inputElement.id}-error`);
+
+		console.log(errorElement);
+		errorElement.textContent = undefined;
+		errorElement.classList.remove(this.#config.visibleErrorMessage);
+	}
+
 	#disableSubmitBtn() {
 		this.#submitBtn.classList.add(this.#config.disabledSubmitBtnClass);
 		this.#submitBtn.setAttribute('disabled', 'disabled');
@@ -37,12 +52,19 @@ export class Validation {
 		const hasInvalidFieldInForm = this.#arrayInputs.some((input) => {
 			return input.validity.valid === false;
 		});
-		const hasInvalidField = !input.validity.valid;
 
-		if (hasInvalidField) {
+		if (input.validity.patternMismatch) {
+			input.setCustomValidity(input.dataset.errorMessage);
+		} else {
+			input.setCustomValidity('');
+		}
+
+		if (!input.validity.valid) {
 			this.#showErrorOnInput(input);
+			this.#showErrorMessage(input, input.validationMessage);
 		} else {
 			this.#hideErrorOnInput(input);
+			this.#hideErrorMessage(input);
 		}
 
 		if (hasInvalidFieldInForm) {

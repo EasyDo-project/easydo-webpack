@@ -8,8 +8,119 @@
 	</head>
 
 	<body class="page">
-		<header></header>
+		<header class="header">
+			<div class="header__wrap">
+				<img
+					class="header__logo"
+					src="<%=require('../images/easydoo-logo.svg')%>"
+				/>
+				<ul class="header__menu">
+					<li class="header__menu-item">
+						<a class="header__menu-link" href="#program">Что входит</a>
+					</li>
+					<li class="header__menu-item">
+						<a class="header__menu-link" href="#feedbacks">Отзывы</a>
+					</li>
+					<li class="header__menu-item">
+						<a class="header__menu-link" href="#rates">Стоимость</a>
+					</li>
+				</ul>
+			</div>
+			<div class="header__wrap">
+				<div class="header__media">
+					<a
+						class="header__menu-link"
+						href="https://t.me/easydoo"
+						target="_blank"
+						><img
+							class="header__media-logo"
+							src="<%=require('../images/tg-logo.svg')%>"
+					/></a>
+					<a
+						class="header__menu-link"
+						href="https://vk.com/easydoo"
+						target="_blank"
+						><img
+							class="header__media-logo"
+							src="<%=require('../images/vk-logo.svg')%>"
+					/></a>
+					<a
+						class="header__menu-link"
+						href="https://wa.me/79104594804"
+						target="_blank"
+						><img
+							class="header__media-logo"
+							src="<%=require('../images/whatsapp-logo.svg')%>"
+					/></a>
+				</div>
+				<a class="header__button" href="#consultation-form">НАЧАТЬ БЕСПЛАТНО</a>
+			</div>
+			<button class="header__mobile-button"></button>
+			<div class="header__mobile-slider">
+				<button class="header__close-button"></button>
+				<nav>
+					<ul class="header__mobile-menu">
+						<img
+							class="header__logo-menu"
+							src="<%=require('../images/easydoo-logo.svg')%>"
+						/>
+						<li class="header__menu-item">
+							<a class="header__menu-link" href="#program">Что входит</a>
+						</li>
+						<li class="header__menu-item">
+							<a class="header__menu-link" href="#feedbacks">Отзывы</a>
+						</li>
+						<li class="header__menu-item">
+							<a class="header__menu-link" href="#rates">Стоимость</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__mobile-media">
+					<a
+						class="header__menu-link"
+						href="https://t.me/easydoo"
+						target="_blank"
+						><img
+							class="header__media-logo"
+							src="<%=require('../images/tg-logo.svg')%>"
+					/></a>
+					<a
+						class="header__menu-link"
+						href="https://vk.com/easydoo"
+						target="_blank"
+						><img
+							class="header__media-logo"
+							src="<%=require('../images/vk-logo.svg')%>"
+					/></a>
+					<a
+						class="header__menu-link"
+						href="https://wa.me/79104594804"
+						target="_blank"
+						><img
+							class="header__media-logo"
+							src="<%=require('../images/whatsapp-logo.svg')%>"
+					/></a>
+				</div>
+			</div>
+		</header>
 		<main class="content">
+			<section class="lead">
+				<h1 class="lead__title">
+					Индивидуальная онлайн-программа восстановления после операций и травм
+				</h1>
+				<p class="lead__subtitle">
+					Получите консультацию от нашего эксперта, анализ текущего состояния и
+					программу на 1 день
+				</p>
+				<button class="button lead__button-try">
+					<a href="#" class="link">ПРОБОВАТЬ БЕСПЛАТНО</a>
+				</button>
+				<div class="lead__present">
+					<div class="lead__present-img rotation"></div>
+					<p class="lead__present-text">ТРЕНИРОВКА В ПОДАРОК</p>
+				</div>
+				<div class="image lead__image"></div>
+			</section>
 			<section class="program">
 				<h2 class="program__header">Что входит в программу</h2>
 				<ol class="program__list"></ol>
@@ -18,6 +129,64 @@
 					src="<%=require('../images/program_image.png')%>"
 					alt="Личный кабинет"
 				/>
+			</section>
+			<section class="icons">
+				<ul class="icons__list">
+					<li class="icons__item">
+						<img
+							class="icons__image"
+							src="<%=require('../images/icon__item1.svg')%>"
+							alt="Видеозапись"
+						/>
+						<p class="icons__description">
+							Индивидуальный комплекс ежедневных видео-тренировок
+						</p>
+					</li>
+
+					<li class="icons__item">
+						<img
+							class="icons__image"
+							src="<%=require('../images/icon__item2.svg')%>"
+							alt="Уровень"
+						/>
+						<p class="icons__description">
+							Для любого возраста и уровня подготовки
+						</p>
+					</li>
+
+					<li class="icons__item">
+						<img
+							class="icons__image"
+							src="<%=require('../images/icon__item3.svg')%>"
+							alt="Чат-поддержка"
+						/>
+						<p class="icons__description">
+							Поддержка инструктора - живое общение в чате 24/7
+						</p>
+					</li>
+
+					<li class="icons__item">
+						<img
+							class="icons__image"
+							src="<%=require('../images/icon__item4.svg')%>"
+							alt="Интернет"
+						/>
+						<p class="icons__description">
+							Занимайтесь дома, на даче и везде, где есть интернет
+						</p>
+					</li>
+
+					<li class="icons__item">
+						<img
+							class="icons__image"
+							src="<%=require('../images/icon__item5.svg')%>"
+							alt="Специалист"
+						/>
+						<p class="icons__description">
+							Занятия ведут только аккредитованные эксперты
+						</p>
+					</li>
+				</ul>
 			</section>
 			<section class="assist">
 				<h2 class="assist__header"></h2>
@@ -310,27 +479,42 @@
 							id="consultationForm"
 							novalidate
 						>
-							<input
-								type="text"
-								class="consultation-form__input"
-								placeholder="Имя"
-								id="personName"
-								name="personName"
-								required
-								minlength="2"
-								maxlength="50"
-								pattern="^[A-Za-zА-Яа-я\s]+$"
-							/>
-							<input
-								type="text"
-								class="consultation-form__input"
-								placeholder="Ваш телефон"
-								id="personPhone"
-								name="personPhone"
-								pattern="^[\d\s\+\(\)\-]+$"
-								minlength="11"
-								required
-							/>
+							<div class="consultation-form__input-container">
+								<input
+									type="text"
+									class="consultation-form__input"
+									placeholder="Имя"
+									id="personName"
+									name="personName"
+									required
+									minlength="2"
+									maxlength="50"
+									pattern="^[A-Za-zА-Яа-я\s]+$"
+									data-error-message="Имя может содержать только кириллические и латинские символы, а так же пробел"
+								/>
+								<p
+									class="consultation-form__error consultation-form__error_name personName-error"
+								>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								</p>
+							</div>
+							<div class="consultation-form__input-container">
+								<input
+									type="text"
+									class="consultation-form__input"
+									placeholder="Ваш телефон"
+									id="personPhone"
+									name="personPhone"
+									pattern="^[\d\s\+\(\)\-]+$"
+									required
+									data-error-message="Укажите телефон в формате +7"
+								/>
+								<p
+									class="consultation-form__error consultation-form__error_phone personPhone-error"
+								>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								</p>
+							</div>
 							<button
 								type="submit"
 								class="consultation-form__btn consultation-form__btn_disabled"
@@ -350,6 +534,131 @@
 						class="consultation-form__gift-img"
 					/>
 				</div>
+			</section>
+			<section class="tariff">
+				<h2 class="tariff__header">Тарифы</h2>
+				<div class="tariff__description">
+					<p class="tariff__description-el">
+						Программа EASY DOO разработана таким образом, чтобы Вы получили
+						полноценную профессиональную помощь и существенно сократили срок
+						восстановления.
+					</p>
+					<p class="tariff__description-el">
+						Познакомьтесь с EASY DOO, записавшись на&nbsp;<span
+							class="tariff__highlight"
+							>бесплатную консультацию</span
+						>
+						с инструктором! Однодневная
+						<span class="tariff__highlight"
+							>программа тренировки в подарок!</span
+						>
+					</p>
+				</div>
+				<div class="tariff__tariffs">
+					<div class="tariff__card tariff-card">
+						<div class="tariff-card__about">
+							<h3 class="tariff-card__h3">7 дней</h3>
+							<p class="tariff-card__description">попробуйте</p>
+						</div>
+						<ul class="tariff-card__list">
+							<li class="tariff-card__list-el">
+								<span class="tariff-card__icon tariff-card__icon_video"></span>
+								1 видеовстреча с инструктором
+							</li>
+							<li class="tariff-card__list-el">
+								<span
+									class="tariff-card__icon tariff-card__icon_introduction"
+								></span>
+								Знакомство с программой тренировок
+							</li>
+							<li class="tariff-card__list-el">
+								<span
+									class="tariff-card__icon tariff-card__icon_first-result"
+								></span>
+								Получение первого результата
+							</li>
+						</ul>
+						<div class="tariff-card__prices">
+							<p class="tariff-card__final-cost">5990 ₽</p>
+						</div>
+					</div>
+					<div class="tariff__card tariff-card tariff-card_popular">
+						<div class="tariff-card__about">
+							<h3 class="tariff-card__h3 tariff-card__h3_popular">30 дней</h3>
+							<p
+								class="tariff-card__description tariff-card__description_popular"
+							>
+								изменитесь
+							</p>
+							<p class="tariff-card__discount tariff-card__discount_light">
+								-38%
+							</p>
+						</div>
+						<ul class="tariff-card__list">
+							<li class="tariff-card__list-el tariff-card__list-el_popular">
+								<span
+									class="tariff-card__icon tariff-card__icon_video-popular"
+								></span>
+								4 видеовстречи с инструктором
+							</li>
+							<li class="tariff-card__list-el tariff-card__list-el_popular">
+								<span
+									class="tariff-card__icon tariff-card__icon_editing-popular"
+								></span>
+								Коррекция программы занятий каждые 3 дня
+							</li>
+							<li class="tariff-card__list-el tariff-card__list-el_popular">
+								<span
+									class="tariff-card__icon tariff-card__icon_result-popular"
+								></span>
+								Достижение заметного результата
+							</li>
+						</ul>
+						<div class="tariff-card__prices">
+							<p
+								class="tariff-card__final-cost tariff-card__final-cost_popular"
+							>
+								14 990 ₽
+							</p>
+							<p class="tariff-card__cost tariff-card__cost_popular">
+								23 960 ₽
+							</p>
+						</div>
+					</div>
+					<div class="tariff__card tariff-card">
+						<div class="tariff-card__about">
+							<h3 class="tariff-card__h3">90 дней</h3>
+							<p class="tariff-card__description">получите максимум</p>
+							<p class="tariff-card__discount tariff-card__discount_dark">
+								-45%
+							</p>
+						</div>
+						<ul class="tariff-card__list">
+							<li class="tariff-card__list-el">
+								<span class="tariff-card__icon tariff-card__icon_video"></span>
+								12 видеовстреч с инструктором
+							</li>
+							<li class="tariff-card__list-el">
+								<span
+									class="tariff-card__icon tariff-card__icon_editing"
+								></span>
+								Коррекция программы занятий каждые 3 дня
+							</li>
+							<li class="tariff-card__list-el">
+								<span class="tariff-card__icon tariff-card__icon_star"></span>
+								Восстановление подвижности
+							</li>
+						</ul>
+						<div class="tariff-card__prices">
+							<p class="tariff-card__final-cost">39 950 ₽</p>
+							<p class="tariff-card__cost">44 970 ₽</p>
+						</div>
+					</div>
+				</div>
+				<a href="#consultation-form" class="tariff__try-btn"
+					>Попробовать бесплатно</a
+				>
+				<p class="tariff__gift">Тренировка в подарок</p>
 			</section>
 			<section class="faq">
 				<h2 class="faq__header">Частые вопросы</h2>
@@ -522,5 +831,16 @@
 				<p class="solving__text"></p>
 			</li>
 		</template>
+		<div class="popup popup__data-sent">
+			<div class="popup__container">
+				<img
+					src="<%=require('../images/done.svg')%>"
+					alt="Отправлено"
+					class="popup__image"
+				/>
+				<p class="popup__text">Спасибо! Данные успешно отправлены.</p>
+				<button class="popup__close">Закрыть</button>
+			</div>
+		</div>
 	</body>
 </html>
