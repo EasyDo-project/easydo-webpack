@@ -1,194 +1,192 @@
 .header {
-  display: flex;
-  max-width: 1160px;
-  margin: 0 auto;
-  justify-content: space-between;
-  position: relative;
+	display: flex;
+	max-width: 1160px;
+	margin: 0 auto;
+	justify-content: space-between;
+	position: relative;
 
-  &__logo {
-    width: 137px;
-    height: 35px;
-    object-fit: contain;
-    padding: 23px 40px 22px 0px;
-    position: fixed;
-    top: 0;
-    transition: top 0.3s ease;
+	&__logo {
+		width: 137px;
+		height: 35px;
+		object-fit: contain;
+		padding: 23px 40px 22px 0px;
+		position: fixed;
+		top: 0;
+		transition: top 0.3s ease;
 
-    &_hidden {
-      top: -80px;
-    }
-  }
+		&_hidden {
+			top: -80px;
+		}
+	}
 
-  &__menu {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    padding: 29px 0 29px 217px;
-    margin: 0;
-    align-items: center;
-    @include font(16px, 500, normal, $text-main);
+	&__menu {
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+		padding: 29px 0 29px 217px;
+		margin: 0;
+		align-items: center;
+		@include font(16px, 500, normal, $text-main);
 
-    &-item {
-      margin: 0;
-      padding-right: 30px;
-      text-align: center;
-    }
-  }
+		&-item {
+			margin: 0;
+			padding-right: 30px;
+			text-align: center;
+		}
+	}
 
-  &__wrap {
-    display: flex;
-    position: relative;
-  } 
-  
-  &__media {
-    display: flex;
-    padding: 17px 18px 14px 0;
-    justify-content: flex-end;
-  }
+	&__wrap {
+		display: flex;
+		position: relative;
+	}
 
-  &__media-logo {
-    height: 49px;
-    width: 49px;
-    object-fit: contain;
-    padding-right: 10px;
-  }
-  
-  &__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 198px;
-    height: 48px;
-    border: none;
-    margin: 17px 0px 15px 0;
-    text-transform: uppercase;
-    text-align: center;
-    background-color: $btn-main-dark;
-    border-radius: 50px;
-    text-decoration: none;
-    @include font(16px, 700, normal, $text-light-header);
-  }
+	&__media {
+		display: flex;
+		padding: 17px 18px 14px 0;
+		justify-content: flex-end;
+	}
 
-  &__button:hover {
-    background-color: $btn-hover;
-    color: $text-btn-light;
-    transition: background-color 0.3s ease-in;
-  }
+	&__media-logo {
+		height: 49px;
+		width: 49px;
+		object-fit: contain;
+		padding-right: 10px;
+	}
 
+	&__button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 198px;
+		height: 48px;
+		border: none;
+		margin: 17px 0px 15px 0;
+		text-transform: uppercase;
+		text-align: center;
+		background-color: $btn-main-dark;
+		border-radius: 50px;
+		text-decoration: none;
+		@include font(16px, 700, normal, $text-light-header);
+	}
 
-  &__mobile-container {
-    max-width: 320px;
-  }
+	&__button:hover {
+		background-color: $btn-hover;
+		color: $text-btn-light;
+		transition: background-color 0.3s ease-in;
+	}
 
-  &__mobile-button {
-    display: none;
-    background-image: url('../../images/menu-icon.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: $btn-mobile;
-    border: none;
-    border-radius: 50px;
-    width: 39px;
-    height: 39px;
-    position: fixed;
-    top: 8px;
-    right: 8px;
-    transition: top 0.3s ease;
+	&__mobile-container {
+		max-width: 320px;
+	}
 
-    &_hidden {
-      top: -50px;
-    }
-  }
-  
-  &__mobile-button:hover {
-    background-color: $btn-hover;
-    transition: background-color 0.3s ease-in;
-  }
+	&__mobile-button {
+		display: none;
+		background-image: url('../../images/menu-icon.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: $btn-mobile;
+		border: none;
+		border-radius: 50px;
+		width: 39px;
+		height: 39px;
+		position: fixed;
+		top: 8px;
+		right: 8px;
+		transition: top 0.3s ease;
 
-  &__mobile-menu {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+		&_hidden {
+			top: -50px;
+		}
+	}
 
-  &__mobile-slider {
-    height: 456px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    right: -320px;
-    transition: right 0.3s ease;
-  }
+	&__mobile-button:hover {
+		background-color: $btn-hover;
+		transition: background-color 0.3s ease-in;
+	}
 
-  &__mobile-slider_shown {
-    right: 0;
-  }
+	&__mobile-menu {
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
 
-  &__mobile-media {
-    display: flex;
-    padding: 0 87px 23px 87px;
-  }
+	&__mobile-slider {
+		height: 456px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		position: fixed;
+		right: -320px;
+		transition: right 0.3s ease;
+	}
 
-  &__logo-menu {
-    margin: 0 auto;
-    padding: 24px 0;
-  }
+	&__mobile-slider_shown {
+		right: 0;
+	}
 
-  &__close-button {
-    background-image: url('../../images/closebtn.svg');
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    width: 20px;
-    height: 20px;
-  }
+	&__mobile-media {
+		display: flex;
+		padding: 0 87px 23px 87px;
+	}
 
-  &__menu-link {
-    text-decoration: none;
-    color: $text-main;
-  }
+	&__logo-menu {
+		margin: 0 auto;
+		padding: 24px 0;
+	}
 
+	&__close-button {
+		background-image: url('../../images/closebtn.svg');
+		background-color: transparent;
+		background-repeat: no-repeat;
+		border: none;
+		position: absolute;
+		top: 16px;
+		right: 16px;
+		width: 20px;
+		height: 20px;
+	}
+
+	&__menu-link {
+		text-decoration: none;
+		color: $text-main;
+	}
 }
 
 @media screen and (max-width: 1023px) {
-  .header {
-    &__menu {
-      display: none;
-    }
+	.header {
+		&__menu {
+			display: none;
+		}
 
-    &__media {
-      display: none;
-    }
+		&__media {
+			display: none;
+		}
 
-    &__button {
-      display: none;
-    }
+		&__button {
+			display: none;
+		}
 
-    &__logo {
-      width: 137px;
-      height: 35px;
-      object-fit: contain;
-      padding: 8px 0 8px 14px;
-    }
+		&__logo {
+			width: 137px;
+			height: 35px;
+			object-fit: contain;
+			padding: 8px 0 8px 14px;
+		}
 
-    &__mobile-button {
-      display: block;
-    }
+		&__mobile-button {
+			display: block;
+		}
 
-    &__menu-item {
-      padding: 0 0 24px 0 ;
-      text-align: center;
-    }
+		&__menu-item {
+			padding: 0 0 24px 0;
+			text-align: center;
+		}
 
-    &__media-logo {
-      padding: 0;
-    }
-  }
+		&__media-logo {
+			padding: 0;
+		}
+	}
 }
