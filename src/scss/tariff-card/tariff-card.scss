@@ -1,0 +1,270 @@
+.tariff-card {
+	padding: 20px 28px;
+	margin: 0;
+	width: 560px;
+	height: 178px;
+	display: grid;
+	grid-template-columns: 1fr 100px;
+	grid-template-rows: 46px 1fr;
+	border-radius: 25px;
+	box-shadow: 0 14px 50px 0 rgba(130, 129, 159, 0.18);
+	box-sizing: border-box;
+	background: $enumeration-numbers-symbols;
+
+	&_popular {
+		background-color: $form-bgr;
+		position: relative;
+
+		&:after {
+			content: 'самый популярный';
+			padding: 5px 10px;
+			margin: 0;
+			position: absolute;
+			bottom: 16px;
+			right: 17px;
+			background-color: $btn-hovered;
+			border-radius: 26px;
+			@include font(13px, 600, normal, $text-btn-light);
+			text-transform: uppercase;
+		}
+	}
+
+	&__about {
+		padding: 0;
+		margin: 0;
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+		display: flex;
+		flex-direction: row;
+	}
+
+	&__h3 {
+		padding: 0;
+		margin: 0;
+		margin-right: 12px;
+		@include font(24px, 600, normal, $text-price);
+
+		&_popular {
+			color: $text-light-header;
+		}
+	}
+
+	&__description {
+		padding: 0;
+		margin: 0;
+		margin-top: 5px;
+		margin-right: 14px;
+		@include font(18px, 500, normal, $text-description);
+
+		&_popular {
+			color: $text-popular;
+		}
+	}
+
+	&__discount {
+		padding: 3px 7px;
+		margin: 0;
+		margin-top: 6px;
+		height: fit-content;
+		border-radius: 26px;
+		@include font(16px, 500, normal, $text-btn-dark);
+
+		&_light {
+			background-color: $btn-main-light;
+			color: $text-btn-dark;
+		}
+
+		&_dark {
+			background-color: $btn-border-dark;
+			color: $text-btn-light;
+		}
+	}
+
+	&__list {
+		padding: 0;
+		margin: 0;
+		grid-column: 1 / 2;
+		grid-row: 2 / 3;
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+
+		&-el {
+			padding: 0;
+			margin: 0;
+			margin-bottom: 10px;
+			display: flex;
+			flex-direction: row;
+			@include font(16px, 500, normal, $text-description);
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+
+			&_popular {
+				color: $text-popular;
+			}
+		}
+	}
+
+	&__icon {
+		padding: 0;
+		margin: 0;
+		margin-right: 16px;
+		width: 20px;
+		height: 20px;
+		display: block;
+
+		&_video {
+			background: url('../../images/tariffs_video.svg');
+		}
+
+		&_video-popular {
+			background: url('../../images/tariffs_video_white.svg');
+		}
+
+		&_introduction {
+			background: url('../../images/tariffs_stickynote.svg');
+		}
+
+		&_first-result {
+			background: url('../../images/tariffs_like.svg');
+		}
+
+		&_editing {
+			background: url('../../images/tariffs_edit-2.svg');
+		}
+
+		&_editing-popular {
+			background: url('../../images/tariffs_edit-2_white.svg');
+		}
+
+		&_result {
+			background: url('../../images/tariffs_cup.svg');
+		}
+
+		&_result-popular {
+			background: url('../../images/tariffs_cup_white.svg');
+		}
+
+		&_star {
+			background: url('../../images/tariffs_star.svg');
+		}
+	}
+
+	&__prices {
+		grid-column: 2 / 3;
+		grid-row: 1 / 3;
+		justify-self: end;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__final-cost {
+		padding: 0;
+		margin: 0;
+		align-self: end;
+		@include font(24px, 600, normal, $text-price);
+
+		&_popular {
+			color: $text-light-header;
+		}
+	}
+
+	&__cost {
+		padding: 0;
+		margin: 0;
+		align-self: end;
+		@include font(16px, 500, normal, $text-description);
+		text-decoration: line-through;
+
+		&_popular {
+			color: $text-popular;
+		}
+	}
+}
+
+@media screen and (max-width: 1155px) {
+	.tariff-card {
+		max-width: 700px;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.tariff-card {
+		padding: 15px;
+		max-width: 300px;
+		height: fit-content;
+
+		&_popular:after {
+			bottom: initial;
+			right: initial;
+			top: 60px;
+			left: 15px;
+		}
+
+		&__about {
+			width: 228px;
+			grid-column: 1 / 3;
+			position: relative;
+			flex-wrap: wrap;
+		}
+
+		&__discount {
+			position: absolute;
+			top: -7px;
+			right: -47px;
+		}
+
+		&__list {
+			margin-top: 47px;
+			grid-column: 1 / 3;
+		}
+
+		&__prices {
+			margin-top: 40px;
+			grid-column: 2 / 3;
+		}
+
+		&__h3 {
+			@include font(18px, 600, normal, $text-price);
+
+			&_popular {
+				color: $text-light-header;
+			}
+		}
+
+		&__description {
+			@include font(14px, 500, normal, $text-description);
+
+			&_popular {
+				color: $text-popular;
+			}
+		}
+
+		&__list-el {
+			@include font(14px, 500, normal, $text-description);
+
+			&_popular {
+				color: $text-popular;
+			}
+		}
+
+		&__final-cost {
+			@include font(18px, 600, normal, $text-price);
+
+			&_popular {
+				color: $text-light-header;
+			}
+		}
+
+		&__cost {
+			@include font(14px, 500, normal, $text-description);
+
+			&_popular {
+				color: $text-popular;
+			}
+		}
+	}
+}
