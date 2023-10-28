@@ -168,32 +168,47 @@
 
 @media screen and (max-width: 980px) {
 	.solving {
-		max-width: 610px;
+		max-width: 660px;
 		display: flex;
 		flex-direction: column;
+		row-gap: 50px;
 
 		&__title {
 			@include font(48px, 700, normal, $text-main);
 		}
+
+		&__image {
+			margin: 45px 125px;
+		}
+
+		&__list {
+			&_was {
+				padding: 0 30px 39px 111px;
+			}
+		}
 	}
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 700px) {
 	.solving {
 		max-width: 390px;
 		padding: 76px 0 70px;
-		row-gap: 50px;
 
 		&__title {
 			@include font(30px, 700, normal, $text-main);
 		}
 
 		&__title-block {
+			padding: 0 25px;
 			@include font(24px, 700, normal, $text-main);
 		}
 
 		&__text {
 			@include font(16px, 500, normal, $text-description);
+
+			&_highlight {
+				@include font(16px, 700, normal, $text-main);
+			}
 		}
 
 		&__image {
