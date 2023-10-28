@@ -24,7 +24,7 @@
 		text-align: center;
 		@include font(64px, 700, normal, $text-main);
 
-		&_highlight {
+		&-highlight {
 			color: $text-highlighted;
 		}
 	}
@@ -46,7 +46,8 @@
 		text-align: center;
 		@include font(30px, 700, normal, $text-main);
 
-		&_highlight {
+		&-highlight {
+			text-transform: uppercase;
 			color: $text-highlighted;
 		}
 	}
@@ -91,8 +92,9 @@
 		align-self: start;
 		@include font(18px, 500, normal, $text-description);
 
-		&_highlight {
-			@include font(18px, 700, normal, $text-main);
+		&-highlight {
+			font-weight: 700;
+			color: $text-main;
 		}
 	}
 
@@ -174,6 +176,8 @@
 		row-gap: 50px;
 
 		&__title {
+			max-width: 80%;
+			align-self: center;
 			@include font(48px, 700, normal, $text-main);
 		}
 
@@ -205,10 +209,6 @@
 
 		&__text {
 			@include font(16px, 500, normal, $text-description);
-
-			&_highlight {
-				@include font(16px, 700, normal, $text-main);
-			}
 		}
 
 		&__image {
@@ -248,6 +248,10 @@
 @media screen and (max-width: 410px) {
 	.solving {
 		max-width: 300px;
+
+		&__title {
+			max-width: 100%;
+		}
 
 		&__button-try {
 			width: 300px;
