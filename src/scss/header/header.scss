@@ -32,6 +32,15 @@
       margin: 0;
       padding-right: 30px;
       text-align: center;
+
+      &::first-letter {
+        text-transform: capitalize;
+      }
+
+      &:hover {
+        opacity: 0.5;
+        transition: opacity 0.3s ease;
+      }
     }
   }
 
@@ -57,7 +66,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 198px;
+    width: 200px;
     height: 48px;
     border: none;
     margin: 17px 0px 15px 0;
@@ -120,8 +129,9 @@
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    right: -320px;
+    right: -350px;
     transition: right 0.3s ease;
+    background-color: #fff;
   }
 
   &__mobile-slider_shown {
@@ -153,6 +163,11 @@
   &__menu-link {
     text-decoration: none;
     color: $text-main;
+
+    &:hover {
+      opacity: 0.5;
+      transition: opacity 0.3s ease;
+    }
   }
 
 }
