@@ -1,0 +1,360 @@
+.consultation-form {
+	padding: 0;
+	margin: 0 120px;
+	margin-bottom: 205px;
+	max-height: 606px;
+	background: $form-bgr url('../../images/form_bgr.png') no-repeat;
+	background-size: 729px 540px;
+	background-position: -7px 1px;
+	border-radius: 58px;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+	&__gift-wrap {
+		position: relative;
+	}
+
+	&__wrapper {
+		max-height: 606px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		column-gap: 43px;
+		position: relative;
+		box-sizing: border-box;
+		overflow: hidden;
+		border-radius: 58px;
+
+		&:before {
+			content: '';
+			width: 737px;
+			height: 570px;
+			position: absolute;
+			bottom: -3px;
+			left: -122px;
+			background-image: url('../../images/form_peoples.png');
+			background-size: contain;
+			background-repeat: no-repeat;
+			z-index: 1;
+		}
+	}
+
+	&__header {
+		padding: 0;
+		margin: 0;
+		margin-top: 81px;
+		grid-column: 2 / 3;
+		grid-row: 1 / 2;
+		@include font(32px, 700, normal, $text-light-header);
+		text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+		z-index: 2;
+	}
+
+	&__description {
+		padding: 0;
+		padding-left: 27px;
+		margin: 0;
+		margin-top: -41px;
+		margin-left: 31px;
+		width: 408px;
+		max-height: 90px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		grid-column: 1 / 2;
+		grid-row: 3 / 4;
+		@include font(16px, 700, 25px, $text-btn-light);
+		text-transform: uppercase;
+		background-color: $btn-hovered;
+		border-radius: 50px;
+		z-index: 2;
+		box-sizing: border-box;
+	}
+
+	&__form {
+		padding: 0;
+		margin: 0;
+		margin-top: 26px;
+		width: fit-content;
+		grid-column: 2 / 3;
+		grid-row: 2 / 3;
+		display: flex;
+		flex-direction: column;
+		z-index: 2;
+	}
+
+	&__input {
+		padding: 13px 25px;
+		margin: 0;
+		margin-bottom: 14px;
+		width: 408px;
+		border-radius: 50px;
+		border: none;
+		outline: none;
+		@include font(16px, 500, 36px, $text-main);
+		box-sizing: border-box;
+
+		&::placeholder {
+			@include font(16px, 500, normal, $text-description);
+		}
+
+		&:last-of-type {
+			margin-bottom: 24px;
+		}
+
+		&-error {
+			outline: 2px solid red;
+		}
+	}
+
+	&__input-container {
+		position: relative;
+	}
+
+	&__error {
+		padding: 10px;
+		margin: 0;
+		position: absolute;
+		top: 63px;
+		left: 0;
+		max-width: 408px;
+		background: $btn-cut;
+		border-radius: 20px;
+		z-index: 2;
+		box-sizing: border-box;
+		font-size: 13px;
+		outline: 1px solid red;
+		visibility: hidden;
+		display: none;
+
+		&_visible {
+			visibility: visible;
+			display: block;
+		}
+	}
+
+	&__btn {
+		padding: 13px 17px;
+		margin: 0;
+		margin-bottom: 24px;
+		width: 408px;
+		@include font(16px, 700, 36px, $text-btn-dark);
+		text-transform: uppercase;
+		border-radius: 50px;
+		border: none;
+
+		&:hover {
+			cursor: pointer;
+			background-color: $btn-hovered;
+		}
+
+		&_disabled {
+			background: rgba(104, 104, 104, 0.5);
+			color: $text-btn-light;
+
+			&:hover {
+				cursor: not-allowed;
+				background: rgba(104, 104, 104, 0.5);
+			}
+		}
+	}
+
+	&__conf-policy {
+		padding: 0;
+		margin: 0;
+		max-width: 342px;
+		align-self: center;
+		@include font(13px, 500, normal, $text-optional);
+		text-align: center;
+	}
+
+	&__gift-img {
+		width: 241px;
+		height: 239px;
+		position: absolute;
+		bottom: -65px;
+		right: -72px;
+		animation: swing 2s infinite;
+	}
+}
+
+@media screen and (max-width: 1155px) {
+	.consultation-form {
+		padding: 50px;
+		margin: 0 120px;
+		margin-bottom: 95px;
+		max-height: fit-content;
+		background: $form-bgr url('../../images/form_peoples.png') no-repeat;
+		background-size: 860px 679px;
+		background-position: center -29px;
+
+		&__wrapper {
+			max-height: fit-content;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			&:before {
+				width: 0;
+				height: 0;
+				position: relative;
+				bottom: auto;
+				right: auto;
+			}
+		}
+
+		&__description {
+			padding: 27px;
+			margin: 0;
+			margin-top: 442px;
+			margin-left: 132px;
+			align-self: start;
+			order: 1;
+		}
+
+		&__header {
+			align-self: center;
+			text-align: center;
+			order: 2;
+		}
+
+		&__form {
+			width: 100%;
+			order: 3;
+		}
+
+		&__input {
+			width: 100%;
+		}
+
+		&__btn {
+			width: 100%;
+		}
+
+		&__gift-img {
+			top: 407px;
+			right: 90px;
+		}
+	}
+}
+
+@media screen and (max-width: 995px) {
+	.consultation-form {
+		&__description {
+			margin-left: 0;
+		}
+
+		&__gift-img {
+			top: 407px;
+			right: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 820px) {
+	.consultation-form {
+		margin-left: 20px;
+		margin-right: 20px;
+		padding: 40px 10px;
+		background-size: 100%;
+		background-position: center 120px;
+
+		&__description {
+			padding: 0;
+			margin: 0;
+			width: 90%;
+			align-self: center;
+			text-align: center;
+			background-color: transparent;
+			order: 2;
+		}
+
+		&__header {
+			margin: 0;
+			margin-bottom: 20px;
+			width: 90%;
+			@include font(30px, 700, 34px, $text-light-header);
+			order: 1;
+		}
+
+		&__form {
+			margin-top: 500px;
+		}
+
+		&__gift-img {
+			top: 387px;
+			right: 200px;
+		}
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.consultation-form {
+		background-position: center 170px;
+
+		&__header {
+			@include font(20px, 700, 24px, $text-light-header);
+		}
+
+		&__description {
+			@include font(15px, 700, 23px, $text-light-header);
+			text-transform: none;
+		}
+
+		&__gift-img {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.consultation-form {
+		&__form {
+			margin-top: 90%;
+		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.consultation-form {
+		margin-left: 30px;
+		margin-right: 30px;
+		background-position: center 200px;
+		border-radius: 42px;
+
+		&__wrapper {
+			border-radius: initial;
+		}
+
+		&__header {
+			margin-bottom: 25px;
+			width: 100%;
+		}
+
+		&__form {
+			margin-top: 269px;
+		}
+
+		&__input {
+			margin-bottom: 10px;
+
+			&:last-of-type {
+				margin-bottom: 10px;
+			}
+		}
+
+		&__btn {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.consultation-form {
+		background-position: center 240px;
+
+		&__form {
+			margin-top: 199px;
+		}
+	}
+}

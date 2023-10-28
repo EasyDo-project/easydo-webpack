@@ -1,7 +1,11 @@
+html {
+	scroll-behavior: smooth;
+}
+
 .page {
 	margin: 0 auto;
 	padding: 0;
 	max-width: 1400px;
+	font-family: Hauora, sans-serif;
 	box-sizing: border-box;
-	font-family: 'Hauora';
 }

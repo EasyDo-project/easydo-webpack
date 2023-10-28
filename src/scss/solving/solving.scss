@@ -1,0 +1,262 @@
+.solving {
+	margin: auto;
+	max-width: 1160px;
+	padding: 153px 0 139px;
+	position: relative;
+	display: grid;
+	grid-template-columns: 460px 660px;
+	grid-template-rows: min-content min-content;
+	row-gap: 84px;
+	column-gap: 40px;
+
+	&__background {
+		position: absolute;
+		width: 1400px;
+		height: 2515px;
+		top: -700px;
+		left: -120px;
+		background: url('../../images/solving_bgr.png') no-repeat;
+	}
+
+	&__title {
+		grid-column: 1/3;
+		margin: 0;
+		text-align: center;
+		@include font(64px, 700, normal, $text-main);
+
+		&-highlight {
+			color: $text-highlighted;
+		}
+	}
+
+	&__container {
+		position: relative;
+		margin: 0;
+		padding: 0;
+		padding-top: 33px;
+		display: flex;
+		flex-direction: column;
+		border-radius: 22px;
+		background: #fff;
+		box-shadow: 0px 6px 44px 6px rgba(187, 188, 214, 0.37);
+	}
+
+	&__title-block {
+		margin: 0;
+		text-align: center;
+		@include font(30px, 700, normal, $text-main);
+
+		&-highlight {
+			text-transform: uppercase;
+			color: $text-highlighted;
+		}
+	}
+
+	&__image {
+		margin: 40px 25px 45px;
+		border-radius: 17px;
+	}
+
+	&__video {
+		padding: 0;
+		margin: 40px 25px 49px;
+		border-radius: 17px;
+	}
+
+	&__list {
+		margin: 0;
+		display: grid;
+		list-style: none;
+		margin-bottom: auto;
+
+		&_was {
+			row-gap: 24px;
+			padding: 0 25px 84px 71px;
+		}
+
+		&_become {
+			grid-template-columns: 1fr 1fr;
+			column-gap: 58px;
+			row-gap: 30px;
+			padding: 0 25px 52px 63px;
+		}
+	}
+
+	&__item {
+		position: relative;
+	}
+
+	&__text {
+		margin: 0;
+		padding: 0;
+		align-self: start;
+		@include font(18px, 500, normal, $text-description);
+
+		&-highlight {
+			font-weight: 700;
+			color: $text-main;
+		}
+	}
+
+	&__button-try {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 89px;
+		background-color: $btn-main-dark;
+		border: none;
+		border-radius: 0px 0px 22px 22px;
+		@include font(16px, 500, normal, $text-btn-light);
+		text-transform: uppercase;
+		cursor: pointer;
+		text-decoration: none;
+		transition: all 0.5s ease-in-out;
+	}
+
+	&__list_was &__item::before {
+		content: '';
+		background-image: url(../../images/dash.svg);
+		width: 19px;
+		height: 3px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		position: absolute;
+		left: -38px;
+		top: 12px;
+	}
+
+	&__list_become &__item::before {
+		content: '';
+		background-image: url(../../images/checkmark.svg);
+		width: 21px;
+		height: 15px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		position: absolute;
+		left: -36px;
+		top: 6px;
+	}
+
+	&__button-try:hover {
+		background-color: $btn-hover;
+		color: $text-btn-light;
+	}
+}
+
+@media screen and (max-width: 1250px) {
+	.solving {
+		max-width: 900px;
+		grid-template-columns: 357px 513px;
+		column-gap: 30px;
+
+		&__background {
+			left: -175px;
+		}
+
+		&__list_was &__item::before {
+			width: 15px;
+			height: 2, 5px;
+			left: -34px;
+		}
+
+		&__list_become &__item::before {
+			width: 17px;
+			height: 12px;
+			left: -32px;
+		}
+	}
+}
+
+@media screen and (max-width: 980px) {
+	.solving {
+		max-width: 660px;
+		display: flex;
+		flex-direction: column;
+		row-gap: 50px;
+
+		&__title {
+			max-width: 80%;
+			align-self: center;
+			@include font(48px, 700, normal, $text-main);
+		}
+
+		&__image {
+			margin: 45px 125px;
+		}
+
+		&__list {
+			&_was {
+				padding: 0 30px 39px 111px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.solving {
+		max-width: 390px;
+		padding: 76px 0 70px;
+
+		&__title {
+			@include font(30px, 700, normal, $text-main);
+		}
+
+		&__title-block {
+			padding: 0 25px;
+			@include font(24px, 700, normal, $text-main);
+		}
+
+		&__text {
+			@include font(16px, 500, normal, $text-description);
+		}
+
+		&__image {
+			margin: 25px;
+		}
+
+		&__video {
+			margin: 25px;
+		}
+
+		&__list {
+			&_was {
+				padding: 0 25px 50px 52px;
+			}
+
+			&_become {
+				grid-template-columns: 1fr;
+				row-gap: 24px;
+				padding: 0 25px 50px 50px;
+			}
+		}
+
+		&__list_was &__item::before {
+			width: 9, 5px;
+			height: 1, 5px;
+			left: -27px;
+		}
+
+		&__list_become &__item::before {
+			width: 10, 5px;
+			height: 7, 5px;
+			left: -25px;
+		}
+	}
+}
+
+@media screen and (max-width: 410px) {
+	.solving {
+		max-width: 300px;
+
+		&__title {
+			max-width: 100%;
+		}
+
+		&__button-try {
+			width: 300px;
+			height: 59px;
+			border-radius: 22px;
+		}
+	}
+}
