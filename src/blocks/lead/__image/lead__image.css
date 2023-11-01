@@ -1,18 +1,18 @@
 .lead__image {
 	background-image: url('../../../images/hero1.png');
-	background-size: 636px 715px;
-	width: 636px;
+	background-size: 640px 715px;
+	width: 640px;
 	height: 715px;
 	position: absolute;
 	right: 78px;
-	bottom: -139px;
+	bottom: -140px;
 }
 
 @media screen and (max-width: 1300px) {
 	.lead__image {
 		background-image: url('../../../images/hero2.png');
-		background-size: 600px 518px;
-		width: 600px;
+		background-size: 493px 518px;
+		width: 493px;
 		height: 518px;
 		right: 0px;
 		bottom: -62px;
@@ -26,6 +26,6 @@
 		background-size: 300px 338px;
 		width: 300px;
 		height: 338px;
-		top: 402px;
+		top: 452px;
 	}
 }

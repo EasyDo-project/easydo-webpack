@@ -4,13 +4,14 @@
   margin: 0 auto;
   justify-content: space-between;
   position: relative;
+  z-index: 3;
 
   &__logo {
     width: 137px;
     height: 35px;
     object-fit: contain;
     padding: 23px 40px 22px 0px;
-    position: fixed;
+    position: absolute;
     top: 0;
     transition: top 0.3s ease;
 
@@ -186,6 +187,7 @@
 		}
 
 		&__logo {
+      position: fixed;
 			width: 137px;
 			height: 35px;
 			object-fit: contain;
