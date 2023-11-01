@@ -14,6 +14,12 @@
 	&__license-link {
 		color: #ff8562;
 		text-decoration: none;
+		opacity: 1;
+		transition: opacity .5s ease-in-out;
+
+		&:hover {
+			opacity: 0.6;
+		}
 	}
 
 	&__columns {

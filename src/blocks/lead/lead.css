@@ -6,7 +6,7 @@
 	object-fit: contain;
 	object-position: right bottom;
 	background-repeat: no-repeat;
-	height: 646px;
+	min-height: 646px;
 	overflow: hidden;
 	position: relative;
 }
@@ -24,7 +24,7 @@
 @media screen and (max-width: 800px) {
 	.lead {
 		background-color: rgba(104, 71, 238, 0.18);
-		min-height: 653px;
+		min-height: 703px;
 		overflow: hidden;
 	}
 }
