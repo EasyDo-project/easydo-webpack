@@ -1,0 +1,47 @@
+.lead__button-try {
+	display: flex;
+    justify-content: center;
+	
+	width: 279px;
+	height: 64px;
+	border: none;
+	border-radius: 50px;
+	margin: auto;
+	margin-top: 43px;
+	margin-left: 120px;
+	cursor: pointer;
+	background-color: #585ede;
+
+	font-size: 16px;
+	font-family: 'Hauora', 'Inter', sans-serif;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	align-items: center;
+	transition: all .5s ease-in-out;
+}
+
+.lead__button-try:hover {
+	background-color: #f85ecd;
+}
+
+@media screen and (max-width: 1300px) {
+	.lead__button-try {
+		margin-top: 14px;
+		margin-left: 153px;
+	}
+}
+
+@media screen and (max-width: 710px) {
+	.lead__button-try {
+		margin-left: 20px;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.lead__button-try {
+		margin-top: 23px;
+		margin: auto;
+	}
+}

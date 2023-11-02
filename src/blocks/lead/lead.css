@@ -1,0 +1,30 @@
+.lead {
+	margin: auto;
+	max-width: 1400px;
+	background-image: url('../../images/background.jpg');
+	background-size: 1400px 646px;
+	object-fit: contain;
+	object-position: right bottom;
+	background-repeat: no-repeat;
+	min-height: 646px;
+	overflow: hidden;
+	position: relative;
+}
+
+@media screen and (max-width: 1300px) {
+	.lead {
+		background-image: none;
+		background-color: rgba(174, 120, 244, 0.26);
+		min-height: 779px;
+		overflow: visible;
+		z-index: -2;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.lead {
+		background-color: rgba(104, 71, 238, 0.18);
+		min-height: 703px;
+		overflow: hidden;
+	}
+}
